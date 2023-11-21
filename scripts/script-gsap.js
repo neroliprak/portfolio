@@ -1,3 +1,4 @@
+// Animation de clavier
 const textes = [
     "Développeuse web|",
     "UI / UX designer|",
@@ -14,4 +15,21 @@ const textes = [
       text: text,
     });
     timelineText.add(timeText);
+  });
+
+
+//   Animation du titre "ma quête" (GAUCHE à DROITE)
+  let tlQuete = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".goal-title",
+      start: "-100px center",
+      end: "50px center",
+      scrub: true,
+      markers: false,
+    },
+  });
+  
+  tlQuete.to(".goal-title", {
+    x:300,
+    opacity: 1,
   });

@@ -1,0 +1,5 @@
+HEADER-ACCESSIBILITÉ : 
+
+    - Le titre H1, lui mettre un sr-only (?)
+    - Les icônes des réseaux sociaux, mettre un (alt ? - sr-only)
+

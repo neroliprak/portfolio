@@ -1,0 +1,5 @@
+1 - Vérification des contrastes de couleurs avec l'extension : WCAG Color contrast checker 
+
+2 - Accessibilité de la navigation (Ajouter soigneseument les bonnes balises (header, nav...))
+
+3 - Les alts dans les images à l'intérieur des liens, avec des alts cohérents.
