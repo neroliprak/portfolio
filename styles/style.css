@@ -1,0 +1,142 @@
+body {
+  font-family: "Varta", sans-serif;
+  background-color: #20252c;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+header {
+  background: #003769 url(./../images/svg/bg-header.svg) no-repeat left/cover;
+  margin: auto;
+  height: 100vh;
+}
+
+/* -- HEADER-MAIN -- */
+
+.header-main {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.header-title {
+  width: 80%;
+  text-align: center;
+  justify-content: center;
+  margin-top: 100px;
+  position: relative;
+  left: 30px;
+}
+
+.subtitles {
+  font-family: "Bebas Neue", sans-serif;
+  text-align: center;
+  font-size: 35px;
+}
+.subtitle1 {
+  color: #0bcaf4;
+  text-shadow: 0 0 7px #034d92, 0 0 10px #034d92, 0 0 42px #034d92,
+    0 0 77px #ffffff, 0 0 20px #ffffff;
+}
+.subtitle2 {
+  color: white;
+}
+
+/* -- SOCIAL-MEDIA -- */
+
+.social-media {
+  text-align: right;
+  margin-right: 50px;
+}
+.social-media svg {
+  width: 7%;
+  margin-left: 2rem;
+  margin-top: 10px;
+}
+
+path {
+  fill: #0bcaf4;
+}
+
+.social-media path:hover {
+  fill: #ffb800;
+}
+
+.logo-circular {
+  display: none;
+}
+
+.header-perso {
+  display: none;
+}
+@media (min-width: 500px) {
+  .header-main {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  .header-title {
+    width: 100%;
+    position: relative;
+    left: -20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header-perso {
+    display: block;
+    position: relative;
+    left: 50px;
+    width: 250px;
+  }
+  .header-title {
+    position: relative;
+    left: 50px;
+  }
+  .subtitles {
+    position: relative;
+    left: 100px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo-circular {
+    position: relative;
+    display: block;
+  }
+  .logo-circular1 {
+    position: absolute;
+    right: 93px;
+    bottom: 145px;
+  }
+  .logo-circular2 {
+    position: absolute;
+    right: 50px;
+    bottom: 100px;
+  }
+  .social-media {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1025px) {
+  .header-main {
+    padding-top: 0;
+  }
+  .header-perso {
+    width: 300px;
+  }
+  .header-title {
+
+    width: 120%;
+    left: -10px;
+  }
+  .subtitles {
+    font-size: 55px;
+  }
+}
