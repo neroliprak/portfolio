@@ -1,0 +1,124 @@
+.apropos {
+  overflow: hidden;
+  z-index: 999;
+  background-color: #343f52;
+  width: 100vw;
+  height: fit-content;
+  padding-top: 100px;
+}
+.apropos-photo {
+  text-align: center;
+  margin-top: auto;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: auto;
+  opacity: 1;
+}
+.apropos-prenom {
+  margin: auto;
+  text-align: center;
+  font-size: 25px;
+  color: #0bcaf4;
+  font-weight: 300;
+}
+
+.apropos-contact {
+  display: flex;
+  margin: auto;
+  margin-top: 80px;
+  padding-bottom: 80px;
+  font-size: 23px;
+  gap: 1em;
+  justify-content: center;
+  text-align: center;
+  background-color: #343f52;
+}
+.mon-cv,
+.contact {
+  text-decoration: none;
+  color: #0bcaf4;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: solid 2px #0bcaf4;
+  font-family: "Bebas Neue", sans-serif;
+  transition: 0.2s;
+  position: relative;
+  z-index: 1;
+}
+.mon-cv:hover,
+.contact:hover {
+  background-color: #0bcaf4;
+  color: #343f52;
+}
+.apropos-main {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.apropos-titre {
+  font-family: "Bebas Neue", sans-serif;
+  color: #0bcaf4;
+  font-size: 50px;
+  font-weight: 800;
+  margin-top: 50px;
+  border-top: solid 5px var(--main-bg-color);
+}
+
+.apropos-texte {
+  color: white;
+  font-size: 20px;
+  font-weight: 100;
+}
+.apropos-neroli{
+    display: none;
+}
+
+.c-cyan {
+  color: #0bcaf4;
+}
+@media (min-width: 1160px) {
+  /* Partie apropos */
+  .apropos-neroli{
+    display: block;
+}
+  .apropos-photo{
+    border: none;
+  }
+  .apropos-presentation {
+    display: flex;
+  }
+  .apropos-main {
+    overflow: hidden;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    padding-left: 100px;
+    padding-right: 80px;
+    border-radius: 5px;
+    width: 80%;
+    border-left: #0bcaf4 solid 5px;
+  }
+  .apropos-texte {
+    font-size: 18px;
+  }
+  .apropos-titre {
+    font-size: 90px;
+    border: none;
+    padding-top: -50px;
+  }
+  .apropos-texte2 {
+    margin-top: -2px;
+    font-size: 25px;
+    font-family: "Bebas Neue", sans-serif;
+    color: #ffffff;
+  }
+
+  .apropos-personnage {
+    position: relative;
+    top: 170px;
+  }
+  .apropos-contact{
+    gap: 3em;
+  }
+}

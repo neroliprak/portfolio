@@ -21,15 +21,65 @@ const textes = [
 //   Animation du titre "ma quête" (GAUCHE à DROITE)
   let tlQuete = gsap.timeline({
     scrollTrigger: {
-      trigger: ".goal-title",
+      trigger: ".goal-title-desktop",
       start: "-100px center",
-      end: "50px center",
+      end: "50px",
       scrub: true,
       markers: false,
     },
   });
-  
-  tlQuete.to(".goal-title", {
+
+
+  tlQuete.to(".goal-title-desktop", {
+    x:800,
+    opacity: 1,
+  });
+
+  let tlQuetePhone = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".goal-title-phone",
+      start: "-180px center",
+      end: "50px",
+      scrub: true,
+      markers: false,
+    },
+  });
+
+
+  tlQuetePhone.to(".goal-title-phone", {
     x:300,
     opacity: 1,
   });
+
+
+
+
+tlApropos = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".apropos-titre",
+    start: "-600px center",
+    end: "200px center",
+    scrub: true,
+    markers: true,
+  },
+});
+
+tlApropos.from(".apropos-titre", {
+  x: 1000,
+  opacity: 1,
+});
+
+let tl1 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".apropos-photo",
+    start: "-500px center",
+    end: "50px center",
+    scrub: true,
+    markers: true,
+  },
+});
+
+tl1.from(".apropos-photo, .apropos-texte", {
+  y: 200,
+  opacity:0,
+});
