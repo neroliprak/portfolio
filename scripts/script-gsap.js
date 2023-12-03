@@ -162,9 +162,33 @@ let tlfantom1 = gsap.timeline({
 });
 
 tlfantom1.to(".mais-aussi-phone p ", {
-  x: -410,
+  x: -400,
   opacity: 1,
 });
+
+
+
+
+
+
+
+let tlfantom1Phone = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".mais-aussi1-phone",
+    start: "-280px center",
+    end: "200px center",
+    scrub: true,
+    markers: false,
+  },
+});
+tlfantom1Phone.to(".mais-aussi1-phone ", {
+  x: -570,
+  opacity: 1,
+});
+
+
+
+
 let tlfantom = gsap.timeline({
   scrollTrigger: {
     trigger: ".mais-aussi1",
@@ -176,9 +200,11 @@ let tlfantom = gsap.timeline({
 });
 
 tlfantom.to(".mais-aussi1", {
-  x:-1800,
+  x: -1800,
   opacity: 1,
 });
+
+//
 
 let tlfantom2 = gsap.timeline({
   scrollTrigger: {
@@ -191,10 +217,9 @@ let tlfantom2 = gsap.timeline({
 });
 
 tlfantom2.to(".mais-aussi2", {
-  x:-1550,
+  x: -1310,
   opacity: 1,
 });
-
 
 let tl = gsap.timeline({
   scrollTrigger: {
@@ -217,19 +242,19 @@ tl.to(".animated-element-phone", {
 
 const wavePathPlaneTablette =
   "M38.5018 1C82.4372 196.241 711.068 146.436 1194.54 134.509C1298.25 141.609 1443.44 193.081 1194.54 342.175C883.402 528.542 264.629 378.083 209.037 661.36C153.445 944.638 1062.73 743.55 1194.54 850.045C1326.34 956.541 1245.65 1277.2 288.033 1231.41C208.808 1256.89 97.8943 1507.1 288.032 1613.11C525.705 1745.62 1139.22 1494.48 1326 1759.5C1475.43 1971.52 339.754 1871.17 38.5019 2095C-12.7868 2123.32 -22.8312 2223.15 79 2335.5C206.289 2475.94 1092.8 2016.64 1326 2335.5C1512.56 2590.58 1576.66 2334.29 1705.5 2228";
-  let tlPlaneTablette = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".animated-element-tablette",
-      start: "000px",
-      end: "2800px ",
-      scrub: true,
-      markers: false,
-    },
-  });
-  tlPlaneTablette .to(".animated-element-tablette", {
-    ease: "slow",
-    motionPath: {
-      path: wavePathPlaneTablette,
-      align: "self",
-    },
-  });
+let tlPlaneTablette = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".animated-element-tablette",
+    start: "000px",
+    end: "2800px ",
+    scrub: true,
+    markers: false,
+  },
+});
+tlPlaneTablette.to(".animated-element-tablette", {
+  ease: "slow",
+  motionPath: {
+    path: wavePathPlaneTablette,
+    align: "self",
+  },
+});

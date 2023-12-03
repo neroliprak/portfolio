@@ -1,6 +1,6 @@
-:root{
-    --main-bg-color:#0bcaf4 ;
-    --white:#FFF;
+:root {
+  --blue: #0bcaf4;
+  --white: #fff;
 }
 
 body {
@@ -11,6 +11,6 @@ body {
   margin: 0;
 }
 
-.display-none{
+.display-none {
   display: none;
 }

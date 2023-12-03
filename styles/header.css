@@ -27,7 +27,7 @@ header {
   font-size: 35px;
 }
 .subtitle1 {
-  color: var(--main-bg-color);
+  color: var(--blue);
   text-shadow: 0 0 7px #034d92, 0 0 10px #034d92, 0 0 42px #034d92,
     0 0 77px #ffffff, 0 0 20px #ffffff;
 }
@@ -46,10 +46,9 @@ header {
   margin-left: 2rem;
 }
 
-path {
-  fill: var(--main-bg-color);
+.icon-social-media {
+  fill: var(--blue);
 }
-
 .social-media path:hover {
   fill: #ffb800;
 }

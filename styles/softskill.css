@@ -96,7 +96,7 @@
   color: white;
 }
 .autonome {
-  border-left: solid 3px var(--main-bg-color);
+  border-left: solid 3px var(--blue);
   margin-left: 30px;
 }
 .determinee {
@@ -124,6 +124,11 @@
 }
 .mais-aussi-desktop {
   display: none;
+}
+.mais-aussi1-phone{
+  z-index: 2;
+  position: relative;
+  right: -200px;
 }
 
 @media (min-width: 700px) {
