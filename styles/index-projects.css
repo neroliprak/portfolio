@@ -1,0 +1,164 @@
+.projects {
+  font-family: "Bebas Neue", sans-serif;
+  color: #ffffff;
+  font-size: 30px;
+  background-image: url(./../images/index-main/bg-project11.svg);
+  background-repeat: none;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.projets {
+  margin-top: 35vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4em;
+  justify-content: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 30px;
+}
+
+.projet {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  border-bottom: 10px solid #f47500;
+}
+.projet1,
+.projet2,
+.projet3,
+.projet4 {
+  border-bottom: 10px solid #0bcaf4;
+}
+
+
+
+.projet img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 400px;
+  height: 250px;
+  filter: grayscale(80%);
+  overflow: hidden;
+}
+.projet img:hover {
+  transform: scale(1.5) rotate(-4deg);
+  filter: none;
+  opacity: 0.9;
+  filter: blur(2px);
+}
+
+.description-projet {
+  text-align: center;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  
+}
+
+.projet:hover .description-projet {
+  opacity: 1;
+  background-color: #f47500;
+  color: #20252c;
+  padding: 5px 10px;
+  width: 60%;
+}
+
+
+.projet1:hover .description-projet-1,
+.projet2:hover .description-projet-2,
+.projet3:hover .description-projet-3,
+.projet4:hover .description-projet-4{
+  background-color: #0bcaf4;
+  
+}
+
+.competence {
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+}
+.button-projets{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0;
+}
+.plus-projet {
+  color: #20252c;
+  padding: 10px 100px;
+  transition: 0.1s ease-in;
+}
+.plus-projet1{
+  background-color: #0bcaf4;
+  border: solid 2px #0bcaf4;
+}
+.plus-projet2{
+  background-color: #F47500;
+  border: solid 2px #F47500;
+}
+.plus-projet3{
+  background-color: #FFE817;
+  border: solid 2px #FFE817;
+}
+.plus-projet1:hover{
+  border: solid 2px #0bcaf4;
+  color: #0bcaf4;
+}
+.plus-projet2:hover{
+  border: solid 2px #F47500;
+  color: #F47500;
+}
+.plus-projet3:hover{
+  border: solid 2px #FFE817;
+  color: #FFE817;
+}
+.plus-projet:hover {
+  background-color: #20252c;
+}
+
+.plus-projet-link {
+  text-decoration: none;
+  color: #20252c;
+}
+
+.plus-projet:hover a {
+  text-decoration: none;
+  color: #0bcaf4;
+}
+
+.ligne-continue {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 200px;
+}
+
+.competence-desktop {
+  display: none;
+}
+
+@media (min-width: 850px) {
+  .competence-desktop {
+    display: block;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+  }
+  .competence {
+    display: none;
+  }
+}
+@media(max-width:959px){
+  .projet img {
+    width: 600px;
+    height: 350px;
+  }
+}

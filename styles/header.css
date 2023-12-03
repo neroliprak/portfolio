@@ -1,7 +1,7 @@
 header {
   background: #003769 url(./../images/header/bg-header.svg) no-repeat left/cover;
   margin: auto;
-  height: 100vh;
+  height: fit-content;
 }
 
 /* -- HEADER-MAIN -- */

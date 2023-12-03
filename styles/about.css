@@ -61,8 +61,6 @@
   color: #0bcaf4;
   font-size: 50px;
   font-weight: 800;
-  margin-top: 50px;
-  border-top: solid 5px var(--main-bg-color);
 }
 
 .apropos-texte {
@@ -70,19 +68,63 @@
   font-size: 20px;
   font-weight: 100;
 }
-.apropos-neroli{
-    display: none;
+.apropos-titre-phone{
+  text-align: center;
 }
-
+.apropos-neroli {
+  display: none;
+}
+.apropos-titre-desktop {
+  display: none;
+}
+.apropos-titre-tablette {
+  display: none;
+}
+.apropos-titre {
+  margin: 0;
+}
 .c-cyan {
   color: #0bcaf4;
 }
+
+@media (min-width: 600px) {
+  .apropos-titre-tablette {
+    display: block;
+    font-size: 70px;
+    margin-bottom: 40px;
+    position: relative;
+    text-align: center;
+  }
+  .apropos-titre-phone {
+    display: none;
+  }
+  .apropos-titre-desktop {
+    display: none;
+  }
+  .apropos-main{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media (min-width: 1160px) {
   /* Partie apropos */
-  .apropos-neroli{
+  .apropos-titre-desktop {
     display: block;
-}
-  .apropos-photo{
+    font-size: 78px;
+    border: none;
+  }
+  .apropos-titre-phone {
+    display: none;
+  }
+  .apropos-titre-tablette {
+    display: none;
+  }
+  .apropos-neroli {
+    display: block;
+  }
+  .apropos-photo {
     border: none;
   }
   .apropos-presentation {
@@ -102,11 +144,7 @@
   .apropos-texte {
     font-size: 18px;
   }
-  .apropos-titre {
-    font-size: 90px;
-    border: none;
-    padding-top: -50px;
-  }
+
   .apropos-texte2 {
     margin-top: -2px;
     font-size: 25px;
@@ -118,7 +156,7 @@
     position: relative;
     top: 170px;
   }
-  .apropos-contact{
+  .apropos-contact {
     gap: 3em;
   }
 }

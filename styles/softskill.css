@@ -1,0 +1,230 @@
+.ligne-continu {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-left: 200px;
+}
+.soft-skill {
+  position: relative;
+  overflow: hidden;
+  /* background-image: url(./../images/index-main/ligne-continu.svg); */
+  background-repeat: no-repeat;
+  background-position: calc(50% + 110px) center;
+  height: fit-content;
+}
+/* Titre */
+.mais-aussi {
+  position: absolute;
+  right: -400px;
+  margin-left: auto;
+  top: 0px;
+  display: flex;
+}
+
+.mais-aussi p {
+  font-size: 90px;
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 800;
+  color: #0bcaf4;
+}
+
+.soft-skill-container {
+  justify-content: center;
+  width: 80%;
+  border-radius: 28px;
+}
+.soft-skill-img-div {
+  display: none;
+}
+
+.soft-skill-1,
+.soft-skill-2,
+.soft-skill-3,
+.soft-skill-4,
+.soft-skill-5 {
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.soft-skill-1 {
+  margin-top: 300px;
+}
+
+.soft-skill-title {
+  width: fit-content;
+  padding: 10px 10px 5px;
+  font-weight: 700;
+  color: #20252c;
+}
+
+.title-soft-skill-1 {
+  background-color: #0bcaf4;
+}
+
+.title-soft-skill-2 {
+  background-color: #f47500;
+  margin-left: auto;
+}
+
+.title-soft-skill-3 {
+  background-color: #ffe817;
+}
+
+.title-soft-skill-4 {
+  background-color: #17ff21;
+  margin-left: auto;
+}
+.title-soft-skill-5 {
+  background-color: #ff17cc;
+}
+
+.left {
+  margin-right: auto;
+}
+.right {
+  margin-left: auto;
+  text-align: right;
+}
+.description-soft-skill {
+  width: 70%;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+  color: white;
+}
+.autonome {
+  border-left: solid 3px var(--main-bg-color);
+  margin-left: 30px;
+}
+.determinee {
+  border-right: solid 3px #f47500;
+  margin-right: 30px;
+}
+.calme {
+  border-left: solid 3px #ffe817;
+  margin-left: 30px;
+}
+.ouverte {
+  border-right: solid 3px #17ff21;
+  margin-right: 30px;
+}
+.travailleuse {
+  border-left: solid 3px #ff17cc;
+  margin-left: 30px;
+}
+.animated-element-tablette {
+  display: none;
+}
+.elt-left {
+  position: relative;
+  top: 30px;
+}
+.mais-aussi-desktop {
+  display: none;
+}
+
+@media (min-width: 700px) {
+  .soft-skill-img-div {
+    display: block;
+    text-align: center;
+    justify-content: center;
+  }
+  .soft-skill-img-1,.soft-skill-img-,.soft-skill-img-3,.soft-skill-img-4,.soft-skill-img-5 {
+    width: 230px;
+    height: 230px;
+  }
+  .soft-skill-img-2 {
+    width: 110%;
+  }
+  .soft-skill-img-3 {
+    width: 80%;
+  }
+  .soft-skill-img-4 {
+    width: 140%;
+  }
+  .soft-skill-img-5 {
+    width: 90%;
+  }
+  .soft-skill-container {
+    display: flex;
+  }
+  .animated-element-phone {
+    display: none;
+  }
+  .animated-element-tablette {
+    display: block;
+  }
+}
+@media (min-width: 1000px) {
+  .description-soft-skill {
+    width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .soft-skill-1{
+    margin-right: -20px;
+  }
+  .soft-skill-3{
+    margin-top: 20px;
+    margin-right: -70px;
+  }
+  .soft-skill-2 {
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+  .soft-skill-4 {
+     margin-top: 20px;
+    margin-left: 50px;
+  }
+  .soft-skill-5 {
+    margin-top: 20px;
+    margin-left: 300px;
+  }
+  .elt-left-3 {
+    position: relative;
+    top: 50px;
+    left: 100px;
+  }
+  .elt-left-5 {
+    position: relative;
+    top: 50px;
+    left: 100px;
+  }
+  .elt-left {
+    position: relative;
+    top: 50px;
+    left: 180px;
+  }
+  .elt-right-2 {
+    position: relative;
+    top: 50px;
+    right: 250px;
+  }
+  .elt-right {
+    position: relative;
+    top: 50px;
+    right: 300px;
+  }
+  .mais-aussi-desktop {
+    display: block;
+  }
+  .mais-aussi-phone {
+    display: none;
+  }
+  .mais-aussi-phone p {
+    display: none;
+  }
+  .mais-aussi {
+    right: -700px;
+    display: flex;
+  }
+  .soft-skill-img-1,.soft-skill-img-2,.soft-skill-img-3,.soft-skill-img-4,.soft-skill-img-5 {
+    width: 250px;
+    height: 250px;
+  }
+
+ 
+}
