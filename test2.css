@@ -1,0 +1,432 @@
+h1 {
+  margin-top: 50px;
+  font-family: "Bebas Neue", sans-serif;
+  color: white;
+  text-align: center;
+}
+h2,
+h3 {
+  font-family: "Bebas Neue", sans-serif;
+}
+h3 {
+  font-size: 30px;
+}
+.main-title {
+  font-size: 80px;
+}
+.sub-title {
+  font-size: 40px;
+  color: #0bcaf4;
+}
+.separator,
+.separator1 {
+  width: 30%;
+  border-top: 1px solid #000;
+  margin: 10px auto;
+}
+.development-presentation {
+  display: flex;
+  margin: 50px auto 0;
+  font-size: 20px;
+  color: #fff;
+  gap: 5rem;
+  padding: 0 30px;
+}
+.development-presentation h2 {
+  font-size: 40px;
+}
+.desktop-image {
+  display: none;
+}
+.scroll-appel {
+  display: none;
+}
+
+/* -- PROJET -- */
+.projet {
+  /* color: white; */
+  margin-top: 40px;
+  padding: 30px 20px;
+}
+.projet h2 {
+  font: 60px "Bebas Neue", sans-serif;
+  margin: 0;
+}
+.projet img {
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.projet img:hover {
+  transform: scale(0.9);
+  box-shadow: 0px 4px 12.1px 0px rgba(0, 0, 0, 0.3);
+}
+.border-left {
+  border-left: 3px solid black;
+  margin-left: 10px;
+}
+
+.context,
+.sub-title-projet,
+button p {
+  margin: auto;
+  width: 95%;
+}
+
+.sub-title-projet {
+  font-size: 25px;
+}
+.sub-title-projet {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.context,
+button p {
+  font-size: 17px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+button p {
+  margin-bottom: 10px;
+}
+
+.savoir-plus-bouton {
+  font-family: "Bebas Neue", sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+  border: none;
+  background-color: #20252c;
+  color: white;
+  cursor: pointer;
+}
+.savoir-plus-desktop {
+  display: none;
+}
+.savoir-plus-bouton p {
+  font-size: 25px;
+}
+
+.hidden {
+  display: none;
+  padding: 0 15px;
+  height: 0px;
+  opacity: 0;
+}
+.retour-projet {
+  text-align: center;
+  display: flex;
+  background-color: #20252c;
+  border: solid white 3px;
+  width: 100%;
+  cursor: pointer;
+}
+.retour-projet:hover {
+  background-color: #3a4452;
+}
+.retour-projet a {
+  text-decoration: none;
+  color: white;
+}
+.container-projet-dataviz {
+  background: url(Dataviz-bg.svg) no-repeat center/cover;
+  padding-bottom: 20px;
+}
+.description-savoir-plus {
+  background-color: #20252c;
+  color: white;
+  margin: 0 20px 20px;
+}
+.container-flex {
+  display: flex;
+}
+.spacing {
+  padding: 0 20px 10px;
+}
+.objectif {
+  background-color: #405a48;
+}
+.objectif-img {
+  margin-top: 15px;
+}
+.objectif h3 {
+  margin-bottom: 10px;
+}
+.spacing img {
+  margin-right: 10px;
+}
+.language-img {
+  width: 20%;
+  object-fit: contain;
+}
+
+.languages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.languages p {
+  margin-top: auto;
+  margin-bottom: auto;
+  font-weight: 800;
+  font-size: 20px;
+}
+.html-language {
+  margin-top: 20px;
+}
+.separator2 {
+  margin-top: 30px;
+  width: 50%;
+  border-top: 3px solid #ffffff;
+}
+.softskill h3 {
+  margin-top: 33px;
+}
+.softskill,
+.hardskill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+ 
+}
+.softskill ul {
+  list-style-type: none;
+  padding: 0;
+}
+.study img,
+.team img,
+.date img {
+  width: 40px;
+}
+.info {
+  font-weight: 800;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #343f52;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.categorie {
+  margin-top: 20px;
+  padding: 10px 10px 20px;
+}
+.competence {
+  background-color: #4b405a;
+}
+.pb-sol {
+  background-color: #4a5a40;
+}
+.bilan {
+  background-color: #5a4940;
+}
+.separator-tablette {
+  display: none;
+}
+.categorie img {
+  display: none;
+}
+@media (min-width: 700px) {
+  .projet h2 {
+    font-size: 90px;
+  }
+
+  .projet img {
+    display: block;
+    margin: auto;
+    width: 80%;
+    object-fit: contain;
+  }
+  .projet-titre {
+    margin: auto;
+    width: 80%;
+  }
+  .sub-title-projet {
+    margin-left: auto;
+  }
+  .border-left {
+    margin-left: 20px;
+  }
+  .sub-title-projet {
+    font-size: 30px;
+  }
+  .context,
+  button p {
+    font-size: 20px;
+  }
+  .savoir-plus-bouton {
+    margin-top: 10px;
+    width: 80%;
+  }
+  .savoir-plus-bouton p {
+    font-size: 25px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 800px) {
+  .description-savoir-plus {
+    padding-top: 10px;
+  }
+  .objectif {
+    margin: 20px;
+    border-radius: 20px;
+    padding-bottom: 30px;
+  }
+  .hard-soft {
+    display: flex;
+  }
+  .hardskill {
+    width: 100%;
+    margin-left: 50px;
+  }
+  .softskill {
+    width: 100%;
+  }
+  .separator2 {
+    display: none;
+  }
+  .separator-tablette {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 25vh;
+    border-top: 3px solid #ffffff;
+  }
+  .languages {
+    justify-content: left;
+  }
+  .retour-projet {
+    width: 50%;
+    margin: auto;
+  }
+  .info {
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: space-around;
+  }
+  .team,
+  .date,
+  .study {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .categorie {
+    margin: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: 950px) {
+  .projet img {
+    width: 80%;
+    object-fit: contain;
+  }
+  .projet {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 100px 0;
+  }
+  .projet:hover img {
+    transition: 0.2s ease;
+    transform: scale(1.1);
+  }
+  .projet a {
+    width: 80%;
+  }
+  .savoir-plus-phone {
+    display: none;
+  }
+  .savoir-plus-desktop {
+    display: flex;
+  }
+  .savoir-plus p {
+    width: 100%;
+  }
+  .team img {
+    width: 50px;
+    height: 50px;
+  }
+  .study img {
+    width: 50px;
+    height: 50px;
+  }
+  .categorie img {
+    display: block;
+  }
+  .competence-img {
+    display: flex;
+    margin-left: 20px;
+  }
+  .competence-img img {
+    width: 70%;
+    object-fit: contain;
+  }
+  .pb-sol-img {
+    display: flex;
+    margin-right: 20px;
+    justify-content: right;
+  }
+  .pb-sol-img img{
+    width: 180%;
+    object-fit: contain;
+  }
+  .pb-sol p{
+    width: 80%;
+  }
+  .bilan-img img{
+    width: 150%;
+  }
+  .bilan-img{
+    margin-right: 100px;
+  }
+  .categorie-text{
+    margin: auto;
+  }
+}
+@media (min-width: 1000px) {
+  .development-presentation img {
+    display: block;
+    width: 35%;
+  }
+  .objectif p{
+    width: 80%;
+    margin: auto;
+  }
+  .description-savoir-plus{
+    font-size: 18px;
+  }
+ .objectif-bis{
+    justify-content: center;
+ }
+}
+@media (min-width: 1100px) {
+}
+@media (min-width: 1200px) {
+  .scroll-appel {
+    display: block;
+    position: relative;
+    bottom: 5vh;
+    left: 65vw;
+  }
+  .description-savoir-plus h3{
+    font-size: 40px;
+  }
+  .description-savoir-plus p{
+    font-size: 20px;
+  }
+  .categorie p{
+    max-width: 50%;
+    margin: auto;
+  }
+  .categorie h3{
+    align-items: center;
+    text-align: center;
+  }
+}

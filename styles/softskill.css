@@ -131,24 +131,29 @@
   right: -200px;
 }
 
+
 @media (min-width: 700px) {
   .soft-skill-img-div {
     display: block;
     text-align: center;
     justify-content: center;
   }
-  .soft-skill-img-1,.soft-skill-img-,.soft-skill-img-3,.soft-skill-img-4,.soft-skill-img-5 {
+  .soft-skill-img-1,.soft-skill-img-2,.soft-skill-img-3,.soft-skill-img-4,.soft-skill-img-5 {
     width: 230px;
     height: 230px;
   }
   .soft-skill-img-2 {
     width: 110%;
+    position: relative;
+    left: -500px;
   }
   .soft-skill-img-3 {
     width: 80%;
   }
   .soft-skill-img-4 {
     width: 140%;
+    position: relative;
+    left: -500px;
   }
   .soft-skill-img-5 {
     width: 90%;

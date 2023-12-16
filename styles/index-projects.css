@@ -102,6 +102,10 @@
   background-color: #ffe817;
   border: solid 2px #ffe817;
 }
+.plus-projet4{
+  background-color: #17FF21;
+  border: solid 2px #17FF21;
+}
 .plus-projet1:hover {
   border: solid 2px #0bcaf4;
   color: #0bcaf4;
@@ -113,6 +117,10 @@
 .plus-projet3:hover {
   border: solid 2px #ffe817;
   color: #ffe817;
+}
+.plus-projet4:hover{
+  border: solid 2px #17FF21;
+  color: #17FF21;
 }
 .plus-projet:hover {
   background-color: #20252c;
@@ -136,6 +144,12 @@
 .plus-projet .pen {
   stroke: #20252c;
   fill: #ffffff00;
+}
+.plus-projet .creation{
+  stroke: #20252c;
+}
+.plus-projet:hover .creation{
+  stroke: #17FF21;
 }
 .plus-projet:hover .pen {
   stroke: #ffe817;
@@ -204,6 +218,11 @@
   .competence {
     display: none;
   }
+  .plus-projet {
+    padding: 10px 10px;
+    margin-left:200px ;
+    margin-right: 200px;
+  }
 }
 @media (max-width: 959px) {
   .projet img {
@@ -211,7 +230,7 @@
     height: 350px;
   }
 }
-@media (min-width: 900px) {
+@media (min-width: 1230px) {
   .button-projets {
     display: flex;
     text-align: center;

@@ -23,3 +23,7 @@ clickCercle.addEventListener("click",function(){
     
 })
 
+function toggleProjet(projet) {
+    var answer = document.getElementById(projet);
+    answer.classList.toggle("hidden");
+}

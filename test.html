@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="test.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Code+Pro:wght@400;700&family=Varta:wght@400;700&display=swap"
+        rel="stylesheet">
+    <title>TEST</title>
+</head>
+
+<body>
+    <!-- Introduction à ce que c'est que le développement web pour moi -->
+    <h1><span class="main-title">Mes projets</span><br><span class="sub-title">développement web & programmation</span>
+    </h1>
+    <hr class="separator">
+    <div class="development-presentation">
+        <img class="desktop-image" src="./images/projets/Perso-dev.svg" alt="">
+        <div>
+            <h2>Le développement web ?</h2>
+            <p>Le développement web représente pour moi un univers sans limites, où toutes idées les plus farfelus
+                peuvent prendre vie. C'est un monde sans cesse stimulant intellectuellement, qui change régulièrement,
+                ce qui le rend constamment captivant. De mon année de terminale à ma deuxième année de BUT MMI, j'ai eu
+                l'occasion de concrétiser de nombreux projets, mettant en pratique les théories enseignées ainsi que
+                celles acquises en autonomie.</p>
+        </div>
+    </div>
+    <svg class="scroll-appel" xmlns="http://www.w3.org/2000/svg" width="7" height="300" viewBox="0 0 7 1222"
+        fill="none">
+        <path d="M3.5 0.5V1222" stroke="#0BCAF4" stroke-width="15" />
+    </svg>
+    <section>
+        <div class="container-projet">
+
+            <div class="container-projet-dataviz opacity-all" id="dataviz">
+                <div class="projet projet-dataviz">
+                    <div class="projet-titre projet-titre-dataviz">
+                        <h2>Dataviz </h2>
+                        <div class="border-left">
+                            <h3>La 6ème extinction des espèces</h3>
+                            <p>Dans un contexte où l'activité humaine prend de plus en plus d’ampleur, de nombreuses
+                                espèces
+                                sont menacées d'extinction.</p>
+                            <button class="savoir-plus-bouton savoir-plus-desktop visible"
+                                onclick="toggleProjet('projet')">
+                                <p>↓ En savoir plus sur Dataviz ↓</p>
+                            </button>
+                        </div>
+                    </div>
+                    <a href="https://neroliprak.github.io/6e-extinction/" target="_blank"><img class="dataviz-img"
+                            src="./images/projets/Dataviz.png" alt="">
+                    </a>
+                    <button class="savoir-plus-bouton savoir-plus-phone visible" onclick="toggleProjet('projet')">
+                        <p>↓ En savoir plus sur Dataviz ↓</p>
+                    </button>
+                </div>
+
+                <div class="description-savoir-plus hidden" id="projet">
+                    <hr class="separator">
+                    <div class="objectif">
+                        <h4>Objectif</h4>
+                        <div class="objectif-flex">
+                            <img class="icon-plus" src="./images/projets/crosshair (2).svg" alt="">
+                            <p>Nous avons donc choisi de
+                                valoriser un jeu de données issus de la base de données du Muséum National d’Histoire
+                                naturelle.
+                                L’objectif est de rendre ces données accessibles au grand public à travers des
+                                graphiques
+                                interactifs.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="infos">
+                        <div class="info info-flex">
+                            <img class="team" src="./images/projets/Users1.svg" alt="">
+                            <p>Équipe de deux
+                            </p>
+                        </div>
+                        <div class="info info-flex">
+                            <img class="team" src="./images/projets/clock.svg" alt="">
+                            <p> septembre - novembre 2023
+                            </p>
+                        </div>
+                        <div class="info info-flex">
+                            <img class="team etude" src="./images/projets/diplome.svg" alt="">
+                            <p>BUT MMI2 - Semestre3
+                            </p>
+                        </div>
+                    </div>
+                    <div class="langage">
+                        <h4>Langages & logiciels utilisés : </h4>
+                        <!-- <div>
+                            Visual studio Code - Figma - Github - Github Desktop
+                        </div> -->
+                        <div>
+                            HTML - CSS - JS - D3.js - GSAP.js
+                        </div>
+                    </div>
+                    <div class="softskill">
+                        <h4>Softskill : </h4>
+                        <div>
+                            Autonomie - Travail d’équipe - Gestion de projet - Autodidacte
+                        </div>
+                    </div>
+                    <div class="categories">
+                        <div class="categorie competence-dev">
+                            <h4>Compétences développées</h4>
+                            <ul>
+                                <li>Réalisation d’une maquette de page web sur le logiciel Figma.</li>
+                                <li>Manipulation d’un jeu de données avec des fichiers JSON</li>
+                                <li>Réalisation de graphiques interactifs à partir de données en D3.js et en JS.</li>
+                                <li>Réalisation d’une page mention légale</li>
+                            </ul>
+                        </div>
+                        <div class="categorie probleme-solution">
+                            <h4>Problèmes & Solutions</h4>
+                            <p>Étant l’un des premiers projets collaboratifs dans le développement web, il a fallu
+                                apprendre à coder ensemble. Nous avons ainsi décidé d’utiliser github. Cependant,
+                                nous
+                                avons remarqué que nos méthodes d’utilisation de Github n’étaient pas les bonnes. Ce
+                                qui
+                                rallentissait grandement notre productivité. <br>Voici nos premières méthodes qui
+                                fut un
+                                échec :</p>
+
+                        </div>
+                        <div class="categorie bilan">
+                            <h4>Mon bilan</h4>
+                            <p>C’est un projet qui m’a beaucoup plu. Malgré le peu de temps pour la réalisation du
+                                projet,
+                                je suis fière du travail que notre duo a apporté. Nous avons réussi à communiquer, à
+                                s’organiser et à s’entraider pour mener à bien le projet.</p>
+                        </div>
+                    </div>
+                    <button class="retour-projet visible" onclick="toggleProjet('projet')">
+                        <p><a href="#dataviz">FERMER</a></p>
+                    </button>
+                </div>
+            </div>
+
+            <div class="container-projet-referencement opacity-all" id="referencement">
+                <div class="projet projet-referencement">
+                    <div class="projet-titre projet-titre-referencement">
+                        <h2>Référencement</h2>
+                        <div class="border-left">
+                            <h3>Réflexion d'une meilleure SEO</h3>
+                            <p>Dans le web, l'importance de se démarquer des autres sites webs est primordiale. Dans
+                                lequel le référencement entre en jeu. Nous avons choisi d’analyser des sites dans un
+                                univers de décoration mignon.
+                            </p>
+                            <button class="savoir-plus-bouton savoir-plus-desktop visible"
+                                onclick="toggleProjet('projet-referencement')">
+                                <p>↓ En savoir plus sur notre travail de référencement ↓</p>
+                            </button>
+                        </div>
+                    </div>
+                    <a href="https://neroliprak.github.io/6e-extinction/" target="_blank"><img class="dataviz-img"
+                            src="./images/projets/Referencement.png" alt="">
+
+                    </a>
+                    <button class="savoir-plus-bouton savoir-plus-phone visible"
+                        onclick="toggleProjet('projet-referencement')">
+                        <p>↓ En savoir plus sur notre travail de référencement ↓</p>
+                    </button>
+                </div>
+
+                <div class="description-savoir-plus hidden" id="projet-referencement">
+                    <hr class="separator">
+                    <div class="objectif">
+                        <h4>Objectif</h4>
+                        <div class="objectif-flex">
+                            <img class="icon-plus" src="./images/projets/crosshair (2).svg" alt="">
+                            <p>L’objectif est de réaliser une stratégie de référencement afin que les navigateurs le
+                                mettent en avant. Il était donc nécessaire de s'intéresser à la concurrence des sites
+                                communs à la nôtre, analyser les mots clés, les liens, trouver un nom de domaine adapté
+                                et un contenu permettant d’être valorisé et d’être mis, par exemple, dans des snippets.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="infos">
+                        <div class="info info-flex">
+                            <img class="team" src="./images/projets/Users1.svg" alt="">
+                            <p>Équipe de deux
+                            </p>
+                        </div>
+                        <div class="info info-flex">
+                            <img class="team" src="./images/projets/clock.svg" alt="">
+                            <p>Novembre 2023
+                            </p>
+                        </div>
+                        <div class="info info-flex">
+                            <img class="team etude" src="./images/projets/diplome.svg" alt="">
+                            <p>BUT MMI2 - Semestre3
+                            </p>
+                        </div>
+                    </div>
+                    <div class="langage">
+                        <h4>Langages & logiciels utilisés : </h4>
+                        <!-- <div>
+                            Visual studio Code - Figma - Github - Github Desktop
+                        </div> -->
+                        <div>
+                            HTML - CSS - JS - D3.js - GSAP.js
+                        </div>
+                    </div>
+                    <div class="softskill">
+                        <h4>Softskill : </h4>
+                        <div>
+                            Travail d’équipe - Analyse - Esprit critique
+                        </div>
+                    </div>
+                    <div class="categories">
+                        <div class="categorie competence-dev">
+                            <h4>Compétences développées</h4>
+                            <ul>
+                                <li>Développer une stratégie de référencement</li>
+                                <li>Utilisation de l’intelligence artificielle avec les meilleurs prompt à utiliser
+                                    (autorisé par le professeur). </li>
+                                <li>Être critique sur les meilleurs mots clés à choisir</li>
+                            </ul>
+                        </div>
+                        <div class="categorie bilan">
+                            <h4>Mon bilan</h4>
+                            <p>C’est un projet que je trouve très intéressant, surtout que le monde du référencement est
+                                un domaine où il faut faire de la veille très régulièrement, puisque les techniques
+                                d’aujourd’hui pourraient être obsolètes ou que les algorithmes de recherches peuvent
+                                être changés.</p>
+                        </div>
+                    </div>
+                    <button class="retour-projet visible" onclick="toggleProjet('projet-referencement')">
+                        <p><a href="#referencement">FERMER</a></p>
+                    </button>
+                </div>
+            </div>
+
+            <div class="container-projet-jardin opacity-all" id="jardin">
+                <div class="projet projet-jardin">
+                    <div class="projet-titre projet-titre-jardin">
+                        <h2>Jardins Vivants</h2>
+                        <div class="border-left">
+                            <h3>Stage de première année de BUT MMI</h3>
+                            <p>Dans le web, l'importance de se démarquer des autres sites webs est primordiale. Dans
+                                lequel le référencement entre en jeu. Nous avons choisi d’analyser des sites dans un
+                                univers de décoration mignon.
+                            </p>
+                            <button class="savoir-plus-bouton savoir-plus-desktop visible"
+                                onclick="toggleProjet('projet-jardin')">
+                                <p>↓ En savoir plus sur notre travail de référencement ↓</p>
+                            </button>
+                        </div>
+                    </div>
+                    <a href="https://neroliprak.github.io/6e-extinction/" target="_blank"><img
+                            src="./images/index-project/stage1.png" alt="">
+
+                    </a>
+                    <button class="savoir-plus-bouton savoir-plus-phone visible"
+                        onclick="toggleProjet('projet-jardin')">
+                        <p>↓ En savoir plus sur notre travail de référencement ↓</p>
+                    </button>
+                </div>
+
+                <div class="description-savoir-plus hidden" id="projet-jardin">
+                    <hr class="separator">
+                    <div class="objectif">
+                        <h4>Objectif</h4>
+                        <div class="objectif-flex">
+                            <img class="icon-plus" src="./images/projets/crosshair (2).svg" alt="">
+                            <p>L’objectif est de réaliser une stratégie de référencement afin que les navigateurs le
+                                mettent en avant. Il était donc nécessaire de s'intéresser à la concurrence des sites
+                                communs à la nôtre, analyser les mots clés, les liens, trouver un nom de domaine adapté
+                                et un contenu permettant d’être valorisé et d’être mis, par exemple, dans des snippets.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="infos">
+                        <div class="info info-flex">
+                            <img class="team" src="./images/projets/Users1.svg" alt="">
+                            <p>Équipe de deux
+                            </p>
+                        </div>
+                        <div class="info info-flex">
+                            <img class="team" src="./images/projets/clock.svg" alt="">
+                            <p>Novembre 2023
+                            </p>
+                        </div>
+                        <div class="info info-flex">
+                            <img class="team etude" src="./images/projets/diplome.svg" alt="">
+                            <p>BUT MMI2 - Semestre3
+                            </p>
+                        </div>
+                    </div>
+                    <div class="langage">
+                        <h4>Langages & logiciels utilisés : </h4>
+                        <!-- <div>
+                            Visual studio Code - Figma - Github - Github Desktop
+                        </div> -->
+                        <div>
+                            HTML - CSS - JS - D3.js - GSAP.js
+                        </div>
+                    </div>
+                    <div class="softskill">
+                        <h4>Softskill : </h4>
+                        <div>
+                            Travail d’équipe - Analyse - Esprit critique
+                        </div>
+                    </div>
+                    <div class="categories">
+                        <div class="categorie competence-dev">
+                            <h4>Compétences développées</h4>
+                            <ul>
+                                <li>Réalisation d’une maquette de page web sur le logiciel Figma.</li>
+                                <li>Manipulation d’un jeu de données avec des fichiers JSON</li>
+                                <li>Réalisation de graphiques interactifs à partir de données en D3.js et en JS.</li>
+                                <li>Réalisation d’une page mention légale</li>
+                            </ul>
+                        </div>
+                        <div class="categorie probleme-solution">
+                            <h4>Problèmes & Solutions</h4>
+                            <ul>
+                                <li>Étant l’un des premiers projets collaboratifs dans le développement web, il a fallu
+                                    apprendre à coder ensemble. Nous avons ainsi décidé d’utiliser github. Cependant,
+                                    nous
+                                    avons remarqué que nos méthodes d’utilisation de Github n’étaient pas les bonnes. Ce
+                                    qui
+                                    rallentissait grandement notre productivité. <br>Voici nos premières méthodes qui
+                                    fut un
+                                    échec :</li>
+                                <ul>
+                        </div>
+                        <div class="categorie bilan">
+                            <h4>Mon bilan</h4>
+                            <p>C’est un projet qui m’a beaucoup plu. Malgré le peu de temps pour la réalisation du
+                                projet,
+                                je suis fière du travail que notre duo a apporté. Nous avons réussi à communiquer, à
+                                s’organiser et à s’entraider pour mener à bien le projet.</p>
+                        </div>
+                    </div>
+                    <button class="retour-projet visible" onclick="toggleProjet('projet-jardin')">
+                        <p><a href="#jardin">FERMER</a></p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>

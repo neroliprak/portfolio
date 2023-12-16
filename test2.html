@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="test2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Code+Pro:wght@400;700&family=Varta:wght@400;700&display=swap"
+        rel="stylesheet">
+    <title>TEST</title>
+</head>
+
+<body>
+    <div class="container-projet-dataviz opacity-all" id="dataviz">
+        <div class="projet projet-dataviz">
+            <div class="projet-titre projet-titre-dataviz">
+                <h2>Dataviz </h2>
+                <div class="border-left">
+                    <p class="sub-title-projet">La 6ème extinction des espèces</p>
+                    <p class="context">Dans un contexte où l'activité humaine prend de plus en plus d’ampleur, de
+                        nombreuses
+                        espèces
+                        sont menacées d'extinction.</p>
+                    <button class="savoir-plus-bouton savoir-plus-desktop visible" onclick="toggleProjet('projet')">
+                        <p>↓ En savoir plus sur Dataviz ↓</p>
+                    </button>
+                </div>
+            </div>
+            <a href="https://neroliprak.github.io/6e-extinction/" target="_blank"><img class="dataviz-img"
+                    src="./images/projets/Dataviz.png" alt="">
+            </a>
+            <button class="savoir-plus-bouton savoir-plus-phone visible" onclick="toggleProjet('projet')">
+                <p>↓ En savoir plus sur Dataviz ↓</p>
+            </button>
+        </div>
+
+        <div class="description-savoir-plus hidden" id="projet">
+            <div>
+                <div class="objectif spacing">
+                    <div class="objectif-bis container-flex">
+                        <img class="objectif-img" src="./images/projets/crosshair (2).svg" alt="">
+                        <h3>Objectif</h3>
+                    </div>
+                    <p>Nous avons donc choisi de
+                        valoriser un jeu de données issus de la base de données du Muséum National d’Histoire
+                        naturelle.
+                        L’objectif est de rendre ces données accessibles au grand public à travers des
+                        graphiques
+                        interactifs.</p>
+                </div>
+                <div class="hard-soft">
+                    <div class="hardskill spacing">
+                        <div class="container-flex">
+                            <img class="hardskill-img" src="./images/projets/terminal.svg" alt="">
+                            <h3>Langages et logiciels</h3>
+                        </div>
+                        <div class="languages">
+                            <div class="html-language container-flex">
+                                <img class="language-img" src="./images/technology-svg/html.png" alt="">
+                                <p>HTML</p>
+                            </div>
+                            <div class="html-language container-flex">
+                                <img class="language-img" src="./images/technology-svg/css.png" alt="">
+                                <p>CSS</p>
+                            </div>
+                            <div class="html-language container-flex">
+                                <img class="language-img" src="./images/technology-svg/js.png" alt="">
+                                <p>JS</p>
+                            </div>
+                            <div class="html-language container-flex">
+                                <img class="language-img" src="./images/technology-svg/gsap.png" alt="">
+                                <p>gsap.js</p>
+                            </div>
+                            <div class="html-language container-flex">
+                                <img class="language-img" src="./images/technology-svg/d3js.png" alt="">
+                                <p>d3.js</p>
+                            </div>
+                        </div>
+                        <hr class="separator2">
+                    </div>
+                    <hr class="separator-tablette">
+                    <div class="softskill spacing">
+                        <div class="container-flex">
+                            <img class="softskill" src="./images/projets/softskill-img.svg" alt="">
+                            <h3>Softskills</h3>
+                        </div>
+                        <ul>
+                            <li>
+                                Travail d'équipe
+                            </li>
+                            <li>
+                                Autonomie
+                            </li>
+                            <li>
+                                Autodidacte
+                            </li>
+                            <li>
+                                Gestion de projet
+                            </li>
+                        </ul>
+                        <hr class="separator2">
+                    </div>
+                </div>
+                <div>
+                    <div class="info">
+                        <div class="team">
+                            <img src="./images/projets/Users1.svg" alt="">
+                            <p>Équipe de deux</p>
+                        </div>
+                        <div class="date">
+                            <img src="./images/projets/clock.svg" alt="">
+                            <p>Septembre - Novembre 2023</p>
+                        </div>
+                        <div class="study">
+                            <img class="study-img" src="./images/projets/diplome.svg" alt="">
+                            <p>BUT MMI 2 - Semestre 3</p>
+                        </div>
+                    </div>
+                    <hr class="separator2">
+                </div>
+                <div class="categorie competence">
+                    <div class="container-flex">
+                        <div class="competence-img">
+                            <img src="./images/technology-svg/perso-competence.svg" alt="">
+                        </div>
+                        <div class="categorie-text">
+                            <h3>
+                                Compétences développées
+                            </h3>
+                            <ul>
+                                <li>Réalisation d’une maquette de page web sur le logiciel Figma.</li>
+                                <li>Manipulation d’un jeu de données avec des fichiers JSON</li>
+                                <li>Réalisation de graphiques interactifs à partir de données en D3.js et en JS.</li>
+                                <li>Réalisation d’une page mention légale</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="categorie pb-sol">
+                    <div class="container-flex">
+                        <div class="categorie-text">
+                            <h3>
+                                Problèmes et solutions
+                            </h3>
+                            <p>
+                                Étant l’un des premiers projets collaboratifs dans le développement web, il a fallu
+                                apprendre à coder ensemble. Nous avons ainsi décidé d’utiliser github. Cependant,
+                                nous
+                                avons remarqué que nos méthodes d’utilisation de Github n’étaient pas les bonnes. Ce
+                                qui
+                                rallentissait grandement notre productivité.
+                            </p>
+                        </div>
+                        <div class="pb-sol-img">
+                            <img src="./images/technology-svg/perso-pb-sol.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="categorie bilan">
+                    <div class="container-flex">
+                        <div class="bilan-img">
+                            <img src="./images/technology-svg/perso-bilan.svg" alt="">
+                        </div>
+                        <div class="categorie-text">
+                            <h3>
+                                Mon bilan
+                            </h3>
+                            <p>C’est un projet qui m’a beaucoup plu. Malgré le peu de temps pour la réalisation du
+                                projet,
+                                je suis fière du travail que notre duo a apporté. Nous avons réussi à communiquer, à
+                                s’organiser et à s’entraider pour mener à bien le projet.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <button class="retour-projet visible" onclick="toggleProjet('projet')">
+                    <p><a href="#dataviz">FERMER</a></p>
+                </button>
+            </div>
+        </div>
+        <script src="./scripts/script.js"></script>
+</body>
+
+</html>

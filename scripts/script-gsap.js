@@ -227,6 +227,7 @@ let tl = gsap.timeline({
     start: "100px",
     end: "1000px ",
     scrub: true,
+    autoRotate:"true",
     markers: true,
   },
 });
@@ -236,6 +237,7 @@ tl.to(".animated-element-phone", {
   ease: "slow",
   motionPath: {
     path: wavePath,
+    autoRotate:"true",
     align: "self",
   },
 });
@@ -247,6 +249,7 @@ let tlPlaneTablette = gsap.timeline({
     trigger: ".animated-element-tablette",
     start: "000px",
     end: "2800px ",
+    autoRotate:"true",
     scrub: true,
     markers: false,
   },
@@ -256,5 +259,24 @@ tlPlaneTablette.to(".animated-element-tablette", {
   motionPath: {
     path: wavePathPlaneTablette,
     align: "self",
+    autoRotate:"true",
   },
+});
+
+
+
+let tlSoftskill = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".soft-skill-img-2",
+    start: "-400px center",
+    end: "200px center",
+    scrub: true,
+    
+    markers: true,
+  },
+});
+
+tlSoftskill.to(".soft-skill-img-2", {
+  x: 500,
+  opacity: 1,
 });
