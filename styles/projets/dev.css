@@ -1,26 +1,30 @@
 h1 {
+  margin-top: 50px;
   font-family: "Bebas Neue", sans-serif;
-  font-size: 40px;
   color: white;
   text-align: center;
-  margin-top: 100px;
 }
-.h1-1 {
+h2,
+h3 {
+  font-family: "Bebas Neue", sans-serif;
+}
+h3 {
+  font-size: 30px;
+}
+.main-title{
   font-size: 80px;
 }
-.h1-2 {
+.sub-title{
+  font-size: 40px;
+}
+.sub-title-dev {
   color: #0bcaf4;
 }
-h2 {
-  font-family: "Bebas Neue", sans-serif;
-  text-align: center;
-  font-size: 50px;
+.sub-title-crea{
+  color: #17FF21;
 }
-.projet p {
-  margin: auto;
-  font-size: 20px;
-  width: 80%;
-  margin-bottom: 30px;
+.sub-title-audiovisuel{
+  color: #F47500;
 }
 .separator,
 .separator1 {
@@ -28,147 +32,517 @@ h2 {
   border-top: 1px solid #000;
   margin: 10px auto;
 }
-.perso-desktop {
-  display: none;
-}
-.presentation-dev {
+.development-presentation {
   display: flex;
-  margin: auto;
-  margin-top: 50px;
+  margin: 50px auto 0;
   font-size: 20px;
   color: #fff;
   gap: 5rem;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 0 30px;
 }
-.appelle-scroll {
+.development-presentation h2 {
+  font-size: 40px;
+}
+.desktop-image {
   display: none;
 }
+.scroll-appel {
+  display: none;
+}
+
+/* -- PROJET -- */
 .projet {
+  /* color: white; */
   margin-top: 40px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 30px 20px;
 }
-.projet-link {
-  text-decoration: none;
+.projet h2 {
+  font: 60px "Bebas Neue", sans-serif;
+  margin: 0;
 }
-.projet-link h2 {
-  color: #20252c;
-}
-.projet-link img {
+.projet img {
   width: 100%;
   object-fit: cover;
+  cursor: pointer;
 }
-.projet1 {
-  background: radial-gradient(50% 50% at 50% 50%, #92e3a9 0%, #4d9e64 100%);
+.projet img:hover {
+  transform: scale(0.9);
+  box-shadow: 0px 4px 12.1px 0px rgba(0, 0, 0, 0.3);
 }
-.projet1-2 {
-  background: radial-gradient(50% 50% at 50% 50%, #a58bcc 0%, #7a58ab 100%);
+.border-left {
+  border-left: 3px solid black;
+  margin-left: 10px;
 }
-.projet2 {
-  background: radial-gradient(50% 50% at 50% 50%, #dae3a1 0%, #bbc963 100%);
+.context,
+.sub-title-projet,
+button p{
+  margin: auto;
+  width: 95%;
 }
-.projet3 {
-  background: radial-gradient(50% 50% at 50% 50%, #3c97c5 0%, #1c6990 100%);
+
+.sub-title-projet {
+  font-size: 25px;
 }
-.projet4 {
-  background: radial-gradient(50% 50% at 50% 50%, #f2de7a 0%, #bcaa4f 100%);
+.sub-title-projet {
+  font-family: "Bebas Neue", sans-serif;
 }
-.projet5 {
-  background: radial-gradient(50% 50% at 50% 50%, #12324f 0%, #021323 100%);
+
+.context,
+button p{
+  font-size: 17px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
-.projet6 {
-  background: radial-gradient(50% 50% at 50% 50%, #191a1e 0%, #0d0e12 100%);
+button p{
+  margin-bottom: 10px;
 }
-.projet7 {
-  background: radial-gradient(50% 50% at 50% 50%, #404040 0%, #292929 100%);
+
+.savoir-plus-bouton {
+  font-family: "Bebas Neue", sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+  border: none;
+  background-color: #20252c;
+  color: white;
+  cursor: pointer;
 }
-.projet5 h2,.titre-p1-2,
-.projet6 h2,.titre-p6,
-.projet7 h2,.titre-p7,
-.projet3 h2,.titre-p3,
-.projet1-2 h2,.titre-p5 {
-  color: #ffffff;
+.savoir-plus-desktop {
+  display: none;
 }
-.titre-p1, .titre-p2, .titre-p4{
+.savoir-plus-bouton p {
+  font-size: 25px;
+}
+
+.hidden {
+  display: none;
+  padding: 0 15px;
+  height: 0px;
+  opacity: 0;
+}
+.retour-projet {
+    font-size: 20px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  border: solid white 3px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 50%;
+  cursor: pointer;
+}
+
+.lien-haut{
+    text-decoration: none;
+
+}
+.retour-projet a {
+  text-decoration: none;
   color: #20252c;
 }
 
+.description-savoir-plus {
+  background-color: #20252c;
+  color: white;
+  margin: 0 40px 20px;
+}
+.container-flex {
+  display: flex;
+}
+.spacing {
+  padding: 0 20px 10px;
+}
+.objectif {
+  background-color: #405a48;
+}
+.objectif-img {
+  margin-top: 25px;
+  width: 35px;
+}
+.objectif h3 {
+  margin-bottom: 10px;
+}
+.spacing img {
+  margin-right: 10px;
+}
+.language-img {
+  width: 20%;
+  object-fit: contain;
+}
+
+.languages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.languages p {
+  margin-top: auto;
+  margin-bottom: auto;
+  font-weight: 800;
+  font-size: 20px;
+}
+.html-language {
+  margin-top: 20px;
+}
+.separator2 {
+  margin-top: 30px;
+  width: 50%;
+  border-top: 3px solid #ffffff;
+}
+.softskill h3 {
+  margin-top: 65px;
+}
+.softskill,
+.hardskill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+.hardskill-img,
+.softskill-img {
+  width: 35px;
+}
+
+.softskill ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.softskill p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+.study img,
+.team img,
+.date img {
+  width: 40px;
+}
+.info {
+  font-weight: 800;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #343f52;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.categorie {
+  margin-top: 20px;
+  padding: 10px 10px 20px;
+}
+.competence {
+  background-color: #4b405a;
+}
+.pb-sol {
+  background-color: #4a5a40;
+}
+.bilan {
+  background-color: #5a4940;
+}
+.separator-tablette {
+  display: none;
+}
+.categorie img {
+  display: none;
+}
+.objectif a{
+    color: rgb(218, 197, 246);
+}
+
+/* A MODIFIER POUR LES PROJETS EN PARTICULIERS */
+
+.container-projet-dataviz {
+    background: radial-gradient(50% 50% at 50% 50%, #92e3a9 0%, #4d9e64 100%);
+    padding-bottom: 20px;
+  }
+.container-projet-referencement{
+    background: radial-gradient(50% 50% at 50% 50%, #a58bcc 0%, #7a58ab 100%);
+    padding-bottom: 20px;
+    color: white;
+}
+.container-projet-jardinsVivants{
+    background: radial-gradient(50% 50% at 50% 50%, #dae3a1 0%, #bbc963 100%);
+    padding-bottom: 20px;
+}
+.container-projet-relaisAnimaux{
+    background: radial-gradient(50% 50% at 50% 50%, #3c97c5 0%, #1c6990 100%);
+    padding-bottom: 20px;
+    color: white;
+}
+.container-projet-resaweb{
+    background: radial-gradient(50% 50% at 50% 50%, #f2de7a 0%, #bcaa4f 100%);
+    padding-bottom: 20px;
+}
+.container-projet-portraitChinois{
+    background: radial-gradient(50% 50% at 50% 50%, #12324f 0%, #021323 100%);
+    padding-bottom: 20px;
+    color: white;
+}
+.container-projet-shifumi{
+    background: radial-gradient(50% 50% at 50% 50%, #DDD 0%, #A7A7A7 100%);
+    padding-bottom: 20px;
+}
+.container-projet-portfolio1{
+    background: radial-gradient(50% 50% at 50% 50%, #191A1E 0%, #0D0E12 100%);
+    padding-bottom: 20px;
+    color: white;
+}
+
+/* LA PARTIE CREATION ARTISTIQUE */
+
+.container-projet-livre7{
+  background: radial-gradient(50% 50% at 50% 50%, #C8CA9F 0%, #9B9C73 100%);
+  padding-bottom: 20px;
+}
+.container-projet-album{
+  background: radial-gradient(50% 50% at 50% 50%, #5C99DE 0%, #497BB4 100%);
+  padding-bottom: 20px;
+}
+.container-projet-leporello{
+  background: radial-gradient(50% 50% at 50% 50%, #C6565D 0%, #913944 100%);
+  padding-bottom: 20px;
+}
+.container-projet-carte{
+  background: radial-gradient(50% 50% at 50% 50%, #7949AC 0%, #5A3581 100%);
+  padding-bottom: 20px;
+  color: white;
+}
+.container-projet-affichePR{
+  background: radial-gradient(50% 50% at 50% 50%, #F2DB9D 0%, #C4B07C 100%);
+  padding-bottom: 20px;
+}
+
+/* PARTIE AUDIOVISUEL */
+
+.container-projet-interview{
+  background: radial-gradient(50% 50% at 50% 50%, #FFF 0%, #C8C8C8 100%);
+  padding-bottom: 20px;
+}
+
+@media (min-width: 700px) {
+  .projet h2 {
+    font-size: 90px;
+  }
+
+  .projet img {
+    display: block;
+    margin: auto;
+    width: 80%;
+    object-fit: contain;
+  }
+  .livre7-img{
+    width:50% !important;
+  }
+  .album-img{
+    width:60% !important;
+  }
+  .carte-img{
+    width: 50% !important;
+  }
+  .affichePR-img{
+    width: 50% !important;
+  }
+  .projet-titre {
+    margin: auto;
+    width: 80%;
+  }
+  .sub-title-projet {
+    margin-left: auto;
+  }
+  .border-left {
+    margin-left: 20px;
+  }
+  .sub-title-projet {
+    font-size: 30px;
+  }
+  .context,
+  button p {
+    font-size: 20px;
+  }
+  .savoir-plus-bouton {
+    margin-top: 10px;
+    width: 80%;
+  }
+  .savoir-plus-bouton p {
+    font-size: 25px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 800px) {
+  .description-savoir-plus {
+    padding-top: 10px;
+  }
+  .objectif {
+    margin: 20px;
+    border-radius: 20px;
+    padding-bottom: 30px;
+  }
+  .hard-soft {
+    display: flex;
+    padding-bottom: 50px;
+  }
+  .hardskill {
+    width: 100%;
+    margin-left: 50px;
+  }
+  .softskill {
+    width: 100%;
+  }
+  .separator2 {
+    display: none;
+  }
+  .separator-tablette {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 25vh;
+    border-top: 3px solid #ffffff;
+  }
+  .languages {
+    justify-content: left;
+  }
+  .retour-projet {
+    width: 50%;
+    margin: auto;
+  }
+  .info {
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: space-around;
+  }
+  .team,
+  .date,
+  .study {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .team p,
+  .date p,
+  .study p {
+    margin: 0;
+  }
+  .categorie {
+    margin: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
 
 @media (min-width: 950px) {
   .projet img {
-    width: 50%;
+    width: 80%;
     object-fit: contain;
   }
-  .projet-link {
+  .projet {
     display: flex;
     flex-direction: row-reverse;
-    padding-bottom: 100px;
-    padding-top: 100px;
+    padding: 100px 0;
   }
-  .projet-link:hover img {
+  .projet:hover img {
     transition: 0.2s ease;
-    transform: scale(1.2);
-    box-shadow: 0px 4px 12.1px 0px rgba(0, 0, 0, 0.30);
+    transform: scale(1.1);
   }
-  .projet-link h2 {
-    font-size: 40px;
-    width: 50%;
-    margin-left: 80px;
+  .projet a {
+    width: 80%;
   }
-  .titre-p{
+  .savoir-plus-phone {
+    display: none;
+  }
+  .savoir-plus-desktop {
+    display: flex;
+  }
+  .savoir-plus p {
+    width: 100%;
+  }
+  .team img {
+    width: 50px;
+    height: 50px;
+  }
+  .study img {
+    width: 50px;
+    height: 50px;
+  }
+  .categorie img {
+    display: block;
+  }
+  .competence-img {
+    display: flex;
     margin-left: 20px;
+  }
+  .competence-img img {
+    width: 70%;
+    object-fit: contain;
+  }
+  .pb-sol-img {
+    display: flex;
     margin-right: 20px;
-    width: 50%;
+    justify-content: right;
+  }
+  .pb-sol-img img {
+    width: 180%;
+    object-fit: contain;
+  }
+  .pb-sol p {
+    width: 80%;
+  }
+  .bilan-img img {
+    width: 150%;
+  }
+  .bilan-img {
+    margin-right: 100px;
+  }
+  .categorie-text {
+    margin-right: auto;
   }
 }
 @media (min-width: 1000px) {
-  .perso-desktop {
+  .development-presentation img {
     display: block;
-    width: 45%;
+    width: 35%;
+  }
+  .objectif p {
+    width: 80%;
+    margin: auto;
+  }
+  .description-savoir-plus {
+    font-size: 18px;
+  }
+  .objectif-bis {
+    justify-content: center;
   }
 }
+
 @media (min-width: 1200px) {
-  .separator1 {
-    display: none;
-  }
-  h1 {
-    font-size: 60px;
-  }
-  .h1-1 {
-    font-size: 100px;
-  }
-  .perso-desktop {
-    display: block;
-  }
-  .presentation-dev img {
-    width: 500px;
-  }
-  .presentation-dev {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .appelle-scroll {
+  .scroll-appel {
     display: block;
     position: relative;
-    bottom: 10vh;
+    bottom: 5vh;
     left: 65vw;
   }
-  .projet img {
-    width: 30%;
+  .description-savoir-plus h3 {
+    font-size: 40px;
   }
-  .projet {
-    display: block;
-    flex-direction: column;
+  .description-savoir-plus p,
+  .description-savoir-plus ul {
+    font-size: 20px;
   }
-  .container-projet {
-    display: flex;
-    flex-wrap: wrap;
+  .categorie p {
+    max-width: 60%;
+    margin-right: auto;
+    padding-left: 40px;
   }
-  .projet img {
-    width: 40%;
-    object-fit: cover;
+  .categorie h3 {
+    margin-right: auto;
+    padding-left: 40px;
   }
 }

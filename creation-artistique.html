@@ -4,91 +4,674 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/projets/dev.css">
-    <!-- FONT-Varta : 400 & 700, FONT-Bebas Neue : 400, FONT-Source Code Pro : 400 & 700 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Code+Pro:wght@400;700&family=Varta:wght@400;700&display=swap"
         rel="stylesheet">
-    <title>Néroli Prak - Développement web</title>
+    <title>TEST</title>
 </head>
 
 <body>
-    <h1><span class="h1-1">Mes projets</span> <br> <span class="h1-2">développement web & programmation</span></h1>
+    <!-- Introduction à ce que c'est que le développement web pour moi -->
+    <h1><span class="main-title">Mes projets</span><br><span class="sub-title sub-title-crea">Création Artistique</span>
+    </h1>
     <hr class="separator">
-    <div class="presentation-dev">
-        <img class="perso-desktop" src="./images/projets/Perso-dev.svg" alt="">
-        <div class="presentation-dev-texte">
-            <h2>La création artistique</h2>
-            <p>Cette catégorie permet de vous parler d'une passion qui me suit depuis petite. Le dessin. Mais encore plus, le dessin </p>
+    <div class="development-presentation">
+        <img class="desktop-image" src="./images/projets/Perso-crea.svg" alt="">
+        <div>
+            <h2>La création artistique ?</h2>
+            <p>Cette catégorie permet de vous parler d'une passion qui me suit depuis petite. Le dessin. Le BUT MMI nous
+                enseigne à être créatif et à aller au là de notre zone de confort. Il faut créer en respectant des
+                contraintes et en suivant les consignes. Elle apporte aussi un aspect de culture de l'art.</p>
         </div>
     </div>
-    <svg class="appelle-scroll" xmlns="http://www.w3.org/2000/svg" width="7" height="500" viewBox="0 0 7 1222"
+    <svg class="scroll-appel" xmlns="http://www.w3.org/2000/svg" width="7" height="300" viewBox="0 0 7 1222"
         fill="none">
-        <path d="M3.5 0.5V1222" stroke="#0BCAF4" stroke-width="10" />
+        <path d="M3.5 0.5V1222" stroke="#17FF21" stroke-width="15" />
     </svg>
-    <hr class="separator1">
-    <section>
-        <div class="container-projet">
 
+    <!-- -------------------- PROJET LIVRE DES 7 MOTS -------------------- -->
 
-            <div class="projet projet1">
-                <a class="projet-link" href="">
-                    <h2>Dataviz - La 6ème extinction des espèces</h2>
-                    <img src="./images/projets/Livre7Mot.png" alt="">
-                    <p>Dataviz est un projet ayant pour objectif de mettre en valeur un jeu de donnée à travers des graphiques... </p>
-                </a>
-
+    <div class="container-projet-livre7 opacity-all" id="livre7">
+        <div class="projet projet-livre7">
+            <div class="projet-titre projet-titre-livre7">
+                <h2>Le livre des 7 mots</h2>
+                <div class="border-left">
+                    <p class="sub-title-projet">Des mots qui ont du sens</p>
+                    <p class="context">Les mots ont un sens fort, souvent nous n'avons pas la même définition d'un même
+                        mot, alors encore moins visuellement. Rentré donc dans mes pensées.
+                    </p>
+                    <button class="savoir-plus-bouton savoir-plus-desktop visible"
+                        onclick="toggleProjet('projet-livre7')">
+                        <p>↓ En savoir plus sur mon livre des 7 mots ↓</p>
+                    </button>
+                </div>
             </div>
+            <a href="https://neroliprak.github.io/6e-extinction/" target="_blank"><img class="livre7-img"
+                    src="./images/projets/Livre7Mot.png" alt="">
             </a>
-            <div class="projet projet1-2">
-                <a class="projet-link" href="">
-                    <h2>Référencement - Réflexion d'une meilleure SEO</h2>
-                    <img src="./images/projets/Album0.png" alt="">
-                    <p>Dans le web, l'importance de se démarquer des autres sites webs est primordiale. Dans lequel le référencement rentre en jeu...</p>
-                </a>
-            </div>
-            <div class="projet projet2">
-                <a class="projet-link" href="">
-                    <h2>Jardins Vivants - Une association de permaculture</h2>
-                    <img src="./images/projets/Album1.png" alt="">
-                    <p>L'un des enjeux de ce monde est de combattre la surconsommation et les méthodes de cultivation qui pourrissent nos sols... Il faut être acteur...  </p>
-                </a>
-            </div>
-            <div class="projet projet3">
-                <a class="projet-link" href="">
-                    <h2>Projet Citoyen - Le relais des annimaux, un refuge animalier</h2>
-                    <img src="./images/projets/Lopporello.png" alt="">
-                </a>
-            </div>
-            <div class="projet projet4">
-                <a class="projet-link" href="">
-                    <h2>Res'art - Un site de réservation d'oeuvres d'arts</h2>
-                    <img src="./images/projets/Carte.png" alt="">
-                </a>
-            </div>
-            <div class="projet projet5">
-                <a class="projet-link" href="">
-                    <h2>Portrait-Chinois - Découvrez qui je suis...</h2>
-                    <img src="./images/projets/Affiche Peuples Racines.png" alt="">
-                </a>
-            </div>
-            <div class="projet projet6">
-                <a class="projet-link" href="">
-                    <h2>Portfolio Version1</h2>
-                    <img src="./images/projets/Portfolio-Terminale.png" alt="">
-                </a>
-            </div>
-            <div class="projet projet7">
-                <a class="projet-link" href="">
-                    <h2>Mes débuts dans le développement web</h2>
-                    <img src="./images/projets/debut-dev.png" alt="">
-                </a>
+            <button class="savoir-plus-bouton savoir-plus-phone visible" onclick="toggleProjet('projet-livre7')">
+                <p>↓ En savoir plus sur mon livre des 7 mots ↓</p>
+            </button>
+        </div>
+        <div class="description-savoir-plus hidden" id="projet-livre7">
+            <div>
+                <div class="objectif spacing">
+                    <div class="objectif-bis container-flex">
+                        <img class="objectif-img" src="./images/projets/crosshair (2).svg" alt="">
+                        <h3>Objectif</h3>
+                    </div>
+                    <p>L'objectif est d'illustrer 7 mots et d'en faire un livre. Le but est d'utiliser plusieurs
+                        techniques, collage, découpage, écriture, dessins, aquarelle, craie, feutre... </p>
+                </div>
+                <div class="hard-soft">
+                    <hr class="separator-tablette">
+                    <div class="softskill spacing">
+                        <div class="container-flex">
+                            <img class="softskill" src="./images/projets/softskill-img.svg" alt="">
+                            <h3>Softskills</h3>
+                        </div>
+                        <ul>
+                            <li>
+                                <p>Créativité</p>
+                            </li>
+                            <li>
+                                <p>Calme</p>
+                            </li>
+                            <li>
+                                <p>Patiente</p>
+                            </li>
+                        </ul>
+                        <hr class="separator2">
+                    </div>
+                </div>
+                <div>
+                    <div class="info">
+                        <div class="team">
+                            <img src="./images/technology-svg/UserSolo.svg" alt="">
+                            <p>Seule</p>
+                        </div>
+                        <div class="date">
+                            <img src="./images/projets/clock.svg" alt="">
+                            <p>Septembre - Décembre 2022</p>
+                        </div>
+                        <div class="study">
+                            <img class="study-img" src="./images/projets/diplome.svg" alt="">
+                            <p>(Projet scolaire) BUT MMI 1 - Semestre 1</p>
+                        </div>
+                    </div>
+                    <hr class="separator2">
+                </div>
+                <div class="categorie competence">
+                    <div class="container-flex">
+                        <div class="competence-img">
+                            <img src="./images/technology-svg/perso-competence.svg" alt="">
+                        </div>
+                        <div class="categorie-text">
+                            <h3>
+                                Compétences développées
+                            </h3>
+                            <ul>
+                                <li>Rechercher des inspirations sur pinterest</li>
+                                <li>Laisser court à sa créativité</li>
+                                <li>Accepter la page blanche et le surpasser</li>
+                                <li>Développer des techniques d'arts plastiques (collage, craie, aquarelle)</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="categorie pb-sol">
+                    <div class="container-flex">
+                        <div class="categorie-text">
+                            <h3>
+                                Problèmes et solutions
+                            </h3>
+                            <p>
+                                Comment surpasser la page blanche ? Je me suis forcé à dessiner tout ce qui se passait
+                                dans ma tête et à faire plein de brouillons même si je n'étais pas satisfait.
+                            </p>
+                        </div>
+                        <div class="pb-sol-img">
+                            <img src="./images/technology-svg/perso-pb-sol.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="categorie bilan">
+                    <div class="container-flex">
+                        <div class="bilan-img">
+                            <img src="./images/technology-svg/perso-bilan.svg" alt="">
+                        </div>
+                        <div class="categorie-text">
+                            <h3>
+                                Mon bilan
+                            </h3>
+                            <p>C'est un projet où j'ai passé beaucoup de temps, notamment pour trouver des idées
+                                d'illustration. Souvent c'était des mots qui n'étaient pas évident à dessiner, tels que
+                                amitié. Mais il s’agissait d’un challenge amusant et créatif. C’est ce défi que j’ai
+                                apprécié. De plus, la réalisation manuel d'un livre était captivant et intéressant à
+                                découvrir</p>
+                        </div>
+
+                    </div>
+                </div>
+                <button class="retour-projet visible" onclick="toggleProjet('projet-livre7')"><a class="lien-haut"
+                        href="#livre7">
+                        FERMER</a>
+                </button>
             </div>
         </div>
-    </section>
+    </div>
+
+    <!-- -------------------- PROJET ALBUM -------------------- -->
+
+    <div class="container-projet-album opacity-all" id="album">
+        <div class="projet projet-album">
+            <div class="projet-titre projet-titre-album">
+                <h2>Pochette d'album</h2>
+                <div class="border-left">
+                    <p class="sub-title-projet">Une illustration d'une pochette d'album en fonction d'une musique</p>
+                    <p class="context">Ce qui me fait vibrer dans la vie, c'est la musique, mais comment pourrions nous
+                        le transmettre en dessin ?
+                    </p>
+                    <button class="savoir-plus-bouton savoir-plus-desktop visible"
+                        onclick="toggleProjet('projet-album')">
+                        <p>↓ En savoir plus sur ma pochette d'album ↓</p>
+                    </button>
+                </div>
+            </div>
+            <a href="./docProjet/TP-Referencement.pdf" target="_blank"><img class="album-img"
+                    src="./images/projets/Album0.png" alt="">
+            </a>
+            <button class="savoir-plus-bouton savoir-plus-phone visible" onclick="toggleProjet('projet-album')">
+                <p>↓ En savoir plus sur ma pochette d'album ↓</p>
+            </button>
+        </div>
+        <div class="description-savoir-plus hidden" id="projet-album">
+            <div>
+                <div class="objectif spacing">
+                    <div class="objectif-bis container-flex">
+                        <img class="objectif-img" src="./images/projets/crosshair (2).svg" alt="">
+                        <h3>Objectif</h3>
+                    </div>
+                    <p> L'objectif est de prendre une musique que l'on apprécie et d'y créer une illustration de son
+                        album</a>
+                    </p>
+                </div>
+                <div class="hard-soft">
+                    <div class="hardskill spacing">
+                        <div class="container-flex">
+                            <img class="hardskill-img" src="./images/projets/terminal.svg" alt="">
+                            <h3>Technologies SEO</h3>
+                        </div>
+                        <div class="languages">
+                            <div class="html-language container-flex">
+                                <img class="language-img" src="./images/technology-svg/figma.png" alt="">
+                                <p>Figma</p>
+                            </div>
+                        </div>
+                        <hr class="separator2">
+                    </div>
+                    <hr class="separator-tablette">
+                    <div class="softskill spacing">
+                        <div class="container-flex">
+                            <img class="softskill" src="./images/projets/softskill-img.svg" alt="">
+                            <h3>Softskills</h3>
+                        </div>
+                        <ul>
+                            <li>
+                                <p>Créativité</p>
+                            </li>
+                        </ul>
+                        <hr class="separator2">
+                    </div>
+                </div>
+                <div>
+                    <div class="info">
+                        <div class="team">
+                            <img src="./images/technology-svg/UserSolo.svg" alt="">
+                            <p>Seule</p>
+                        </div>
+                        <div class="date">
+                            <img src="./images/projets/clock.svg" alt="">
+                            <p>Janvier - Février 2023</p>
+                        </div>
+                        <div class="study">
+                            <img class="study-img" src="./images/projets/diplome.svg" alt="">
+                            <p>(Projet scolaire) BUT MMI 2 - Semestre 3</p>
+                        </div>
+                    </div>
+                    <hr class="separator2">
+                </div>
+                <div class="categorie competence">
+                    <div class="container-flex">
+                        <div class="competence-img">
+                            <img src="./images/technology-svg/perso-competence.svg" alt="">
+                        </div>
+                        <div class="categorie-text">
+                            <h3>
+                                Compétences développées
+                            </h3>
+                            <ul>
+                                <li>Recherche de l'histoire d'une musique</li>
+                                <li>Assemblée des éléments de façon cohérent et expliqué
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="categorie bilan">
+                    <div class="container-flex">
+                        <div class="bilan-img">
+                            <img src="./images/technology-svg/perso-bilan.svg" alt="">
+                        </div>
+                        <div class="categorie-text">
+                            <h3>
+                                Mon bilan
+                            </h3>
+                            <p>C'était un court projet, mais dont je suis plutôt fier, c'est pourquoi j'en ai réalisé
+                                deux, l'un représentant une de mes improvisations au piano. </p>
+                                <img src="./images/projets/Album1.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+                <a class="lien-haut" href="#album"><button class="retour-projet visible"
+                        onclick="toggleProjet('projet-album')">
+                        FERMER
+                    </button></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------- PROJET LEPORELLO -------------------- -->
+
+    <div class="container-projet-leporello opacity-all" id="leporello">
+        <div class="projet projet-leporello">
+            <div class="projet-titre projet-titre-leporello">
+                <h2>Leporello</h2>
+                <div class="border-left">
+                    <p class="sub-title-projet">Sauvons Boddy !</p>
+                    <p class="context">Une histoire mené d'embûches à la secours d'un ourson
+                    </p>
+                    <button class="savoir-plus-bouton savoir-plus-desktop visible"
+                        onclick="toggleProjet('projet-leporello')">
+                        <p>↓ En savoir plus sur mon livre ↓</p>
+                    </button>
+                </div>
+            </div>
+            <a href="https://neroliprak.wordpress.com/" target="_blank"><img class="leporello-img"
+                    src="./images/projets/Lopporello.png" alt="">
+            </a>
+            <button class="savoir-plus-bouton savoir-plus-phone visible" onclick="toggleProjet('projet-leporello')">
+                <p>↓ En savoir plus sur mon livre ↓</p>
+            </button>
+        </div>
+        <div class="description-savoir-plus hidden" id="projet-leporello">
+            <div>
+                <div class="objectif spacing">
+                    <div class="objectif-bis container-flex">
+                        <img class="objectif-img" src="./images/projets/crosshair (2).svg" alt="">
+                        <h3>Objectif</h3>
+                    </div>
+                    <p> L'objectif est de réaliser un livre sous forme de leporello, où le but est d'y inscrire “Viens
+                        chez moi j'habite dehors” et dont un personnage doit amener un autre personnage vers un autre
+                        environnement complètement différent.</a>
+
+                    </p>
+                </div>
+                <div class="hard-soft">
+                    <div class="softskill spacing">
+                        <div class="container-flex">
+                            <img class="softskill" src="./images/projets/softskill-img.svg" alt="">
+                            <h3>Softskills</h3>
+                        </div>
+                        <ul>
+                            <li>
+                                <p>Créativité</p>
+                            </li>
+                            <li>
+                                <p>Manuel</p>
+                            </li>
+                            <li>
+                                <p>Création</p>
+                            </li>
+                            <li>
+                                <p>Concentration</p>
+                            </li>
+                            <li>
+                                <p>Calme</p>
+                            </li>
+                        </ul>
+                        <hr class="separator2">
+                    </div>
+                </div>
+                <div>
+                    <div class="info">
+                        <div class="team">
+                            <img src="./images/technology-svg/UserSolo.svg" alt="">
+                            <p>Seule</p>
+                        </div>
+                        <div class="date">
+                            <img src="./images/projets/clock.svg" alt="">
+                            <p> Mars à mai 2023</p>
+                        </div>
+                        <div class="study">
+                            <img class="study-img" src="./images/projets/diplome.svg" alt="">
+                            <p>(Projet Scolaire) BUT MMI 1 - Semestre 2</p>
+                        </div>
+                    </div>
+                    <hr class="separator2">
+                </div>
+                <div class="categorie competence">
+                    <div class="container-flex">
+                        <div class="competence-img">
+                            <img src="./images/technology-svg/perso-competence.svg" alt="">
+                        </div>
+                        <div class="categorie-text">
+                            <h3>
+                                Compétences développées
+                            </h3>
+                            <ul>
+                                <li>Nouvelle technique de composition d'un livre sous forme de leporello</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="categorie bilan">
+                    <div class="container-flex">
+                        <div class="bilan-img">
+                            <img src="./images/technology-svg/perso-bilan.svg" alt="">
+                        </div>
+                        <div class="categorie-text">
+                            <h3>
+                                Mon bilan
+                            </h3>
+                            <p>Un projet très amusant dans l'écriture du livre et de l'histoire. J'ai pu découvrir et
+                                apprécier des exemples de livres que notre professeur nous a montrés. Cela m'ouvre dans
+                                un autre univers et d'opportunités dans l'art.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <a class="lien-haut" href="#leporello"><button class="retour-projet visible"
+                        onclick="toggleProjet('projet-leporello')">
+                        FERMER
+                    </button></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------- PROJET CARTE TARO -------------------- -->
+
+    <div class="container-projet-carte opacity-all" id="carte">
+        <div class="projet projet-carte">
+            <div class="projet-titre projet-titre-carte">
+                <h2>Carte taro</h2>
+                <div class="border-left">
+                    <p class="sub-title-projet">Ma carte</p>
+                    <p class="context">Qui sommes-nous vraiment ? Peut-on l’illustrer ? Souvent des animaux mais aussi
+                        des couleurs ont une signification et un symbole derrière. J’ai donc choisi le lynx et la
+                        violette pour me représenter.
+
+                    </p>
+                    <button class="savoir-plus-bouton savoir-plus-desktop visible"
+                        onclick="toggleProjet('projet-carte')">
+                        <p>↓ En savoir plus sur ma carte ↓</p>
+                    </button>
+                </div>
+            </div>
+            <a href="https://le-relais-des-animaux.prak.butmmi.o2switch.site/" target="_blank"><img class="carte-img"
+                    src="./images/projets/Carte.png" alt="">
+            </a>
+            <button class="savoir-plus-bouton savoir-plus-phone visible" onclick="toggleProjet('projet-carte')">
+                <p>↓ En savoir plus sur ma carte ↓</p>
+            </button>
+        </div>
+        <div class="description-savoir-plus hidden" id="projet-carte">
+            <div>
+                <div class="objectif spacing">
+                    <div class="objectif-bis container-flex">
+                        <img class="objectif-img" src="./images/projets/crosshair (2).svg" alt="">
+                        <h3>Objectif</h3>
+                    </div>
+                    <p> L'objectif est de créer une carte de tarot représentant un animal et une fleur qui nous sont
+                        significatifs, avec la contrainte qu'ils doivent être fusionnés.
+
+                        </a>
+
+                    </p>
+                </div>
+                <div class="hard-soft">
+                    <hr class="separator-tablette">
+                    <div class="softskill spacing">
+                        <div class="container-flex">
+                            <img class="softskill" src="./images/projets/softskill-img.svg" alt="">
+                            <h3>Softskills</h3>
+                        </div>
+                        <ul>
+                            <li>
+                                <p>Créativité</p>
+                            </li>
+                            <li>
+                                <p>Concentration</p>
+                            </li>
+                        </ul>
+                        <hr class="separator2">
+                    </div>
+                </div>
+                <div>
+                    <div class="info">
+                        <div class="team">
+                            <img src="./images/technology-svg/UserSolo.svg" alt="">
+                            <p>Seule</p>
+                        </div>
+                        <div class="date">
+                            <img src="./images/projets/clock.svg" alt="">
+                            <p>Avril 2023</p>
+                        </div>
+                        <div class="study">
+                            <img class="study-img" src="./images/projets/diplome.svg" alt="">
+                            <p>(Projet Scolaire) BUT MMI 1 - Semestre 2</p>
+                        </div>
+                    </div>
+                    <hr class="separator2">
+                </div>
+                <div class="categorie competence">
+                    <div class="container-flex">
+                        <div class="competence-img">
+                            <img src="./images/technology-svg/perso-competence.svg" alt="">
+                        </div>
+                        <div class="categorie-text">
+                            <h3>
+                                Compétences développées
+                            </h3>
+                            <ul>
+                                <li>Inspiration sur pinterest</li>
+                                <li>Recherche sur les significations et les symboles d’animaux et des fleurs
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="categorie bilan">
+                    <div class="container-flex">
+                        <div class="bilan-img">
+                            <img src="./images/technology-svg/perso-bilan.svg" alt="">
+                        </div>
+                        <div class="categorie-text">
+                            <h3>
+                                Mon bilan
+                            </h3>
+                            <p>Je suis très contente de cette carte. Je trouve qu’elle me représente bien, j’ai su tirer
+                                les symboles à mon avantage et les fusionner de façon cohérente.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <a class="lien-haut" href="#carte"><button class="retour-projet visible"
+                        onclick="toggleProjet('projet-carte')">
+                        FERMER
+                    </button></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------- PROJET AFFICHE -------------------- -->
+
+    <div class="container-projet-affichePR opacity-all" id="affichePR">
+        <div class="projet projet-affichePR">
+            <div class="projet-titre projet-titre-affichePR">
+                <h2>Festival des peuples racines</h2>
+                <div class="border-left">
+                    <p class="sub-title-projet">Une affiche événementielle
+                    </p>
+                    <p class="context">
+                        Le festival des peuples racines arrive à grand pas. C'est pour cela que notre professeur Madame DALLET, présidente des Arts Foreztiers, nous a proposé de réaliser l'affiche de l'événement. 
+                    </p>
+                    <button class="savoir-plus-bouton savoir-plus-desktop visible"
+                        onclick="toggleProjet('projet-affichePR')">
+                        <p>↓ En savoir plus sur mon affiche ↓</p>
+                    </button>
+                </div>
+            </div>
+            <a href="https://resaweb.prak.butmmi.o2switch.site/" target="_blank"><img class="affichePR-img"
+                    src="./images/projets/Affiche Peuples Racines.png" alt="">
+            </a>
+            <button class="savoir-plus-bouton savoir-plus-phone visible" onclick="toggleProjet('projet-affichePR')">
+                <p>↓ En savoir plus sur mon affiche ↓</p>
+            </button>
+        </div>
+        <div class="description-savoir-plus hidden" id="projet-affichePR">
+            <div>
+                <div class="objectif spacing">
+                    <div class="objectif-bis container-flex">
+                        <img class="objectif-img" src="./images/projets/crosshair (2).svg" alt="">
+                        <h3>Objectif</h3>
+                    </div>
+                    <p>L'objectif est de créer une affiche en respectant les conventions d'une affiche et de s'informer sur le festival dans le but d'en intégrer son atmosphère. Cela permet ainsi de mieux retranscrire l'ambiance dans l'affiche. 
+                        </a>
+
+                    </p>
+                </div>
+                <div class="hard-soft">
+                    <div class="hardskill spacing">
+                        <div class="container-flex">
+                            <img class="hardskill-img" src="./images/projets/terminal.svg" alt="">
+                            <h3>Technologies</h3>
+                        </div>
+                        <div class="languages">
+                            <div class="html-language container-flex">
+                                <img class="language-img" src="./images/technology-svg/figma.png" alt="">
+                                <p>Figma</p>
+                            </div>
+                        </div>
+                        <hr class="separator2">
+                    </div>
+                    <hr class="separator-tablette">
+                    <div class="softskill spacing">
+                        <div class="container-flex">
+                            <img class="softskill" src="./images/projets/softskill-img.svg" alt="">
+                            <h3>Softskills</h3>
+                        </div>
+                        <ul>
+                            <li>
+                                <p>Créativité</p>
+                            </li>
+                            <li>
+                                <p>Concentration</p>
+                            </li>
+                        </ul>
+                        <hr class="separator2">
+                    </div>
+                </div>
+                <div>
+                    <div class="info">
+                        <div class="team">
+                            <img src="./images/technology-svg/UserSolo.svg" alt="">
+                            <p>Seule</p>
+                        </div>
+                        <div class="date">
+                            <img src="./images/projets/clock.svg" alt="">
+                            <p>Février - Mars</p>
+                        </div>
+                        <div class="study">
+                            <img class="study-img" src="./images/projets/diplome.svg" alt="">
+                            <p>(Projet Scolaire) BUT MMI 1 - Semestre 2</p>
+                        </div>
+                    </div>
+                    <hr class="separator2">
+                </div>
+                <div class="categorie competence">
+                    <div class="container-flex">
+                        <div class="competence-img">
+                            <img src="./images/technology-svg/perso-competence.svg" alt="">
+                        </div>
+                        <div class="categorie-text">
+                            <h3>
+                                Compétences développées
+                            </h3>
+                            <ul>
+                                <li>Inspiration printerest</li>
+                                <li>Produire une affiche événementielle
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="categorie pb-sol">
+                    <div class="container-flex">
+                        <div class="categorie-text">
+                            <h3>
+                                Problèmes et solutions
+                            </h3>
+                            <p>
+                              Il fallait respecter des conventions précises pour une affiche événementielle. Il faut penser à que le texte soit bien visible, que l'illustration représente bien l'esprit du festival du peuples racines. Pour cela, j'ai réalisé plusieurs agencement afin d'obtenir l'affiche la plus structurée. 
+                            </p>
+                        </div>
+                        <div class="pb-sol-img">
+                            <img src="./images/technology-svg/perso-pb-sol.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="categorie bilan">
+                    <div class="container-flex">
+                        <div class="bilan-img">
+                            <img src="./images/technology-svg/perso-bilan.svg" alt="">
+                        </div>
+                        <div class="categorie-text">
+                            <h3>
+                                Mon bilan
+                            </h3>
+                            <p>C’est un projet qui a été très enrichissant que cela soit dans le développement web
+                                front/back end. En effet, c’est grâce à ce projet que j’ai eu un déclic et dont j’ai
+                                véritablement compris le fonctionnement de PHP, SQL et des bases de données en
+                                générales. Res’art est un challenge qui réunit l’ensemble des compétences apprises
+                                depuis le début d’année de MMI (cf. Technologies)</p>
+                        </div>
+
+                    </div>
+                </div>
+                <a class="lien-haut" href="#affichePR"><button class="retour-projet visible"
+                        onclick="toggleProjet('projet-affichePR')">
+                        FERMER
+                    </button></a>
+            </div>
+        </div>
+    </div>
+
+
+    <footer id="footer">
+        <p>Néroli Prak</p>
+        <p>neroliprak@gmail.com</p>
+    </footer>
+    <script src="./scripts/script.js"></script>
 </body>
 
 </html>
