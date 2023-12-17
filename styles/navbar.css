@@ -41,7 +41,7 @@ nav ul li:hover::after {
   width: 100%;
 }
 nav li a {
-  font-size: 14px;
+  font-size: 0.875rem;
   text-decoration: none;
   font-weight: 700;
   color: white;
@@ -74,7 +74,7 @@ nav .audio-link{
   }
   
   nav li a {
-    font-size: 16px;
+    font-size: 1rem;
   }
   nav li {
     position: relative;

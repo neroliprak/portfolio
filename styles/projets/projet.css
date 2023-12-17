@@ -9,13 +9,13 @@ h3 {
   font-family: "Bebas Neue", sans-serif;
 }
 h3 {
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 .main-title{
-  font-size: 80px;
+  font-size: 5rem;
 }
 .sub-title{
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 .sub-title-dev {
   color: #0bcaf4;
@@ -38,13 +38,13 @@ h3 {
 .development-presentation {
   display: flex;
   margin: 50px auto 0;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #fff;
   gap: 5rem;
   padding: 0 30px;
 }
 .development-presentation h2 {
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 .desktop-image {
   display: none;
@@ -84,7 +84,7 @@ button p{
 }
 
 .sub-title-projet {
-  font-size: 25px;
+  font-size: 1.563rem;
 }
 .sub-title-projet {
   font-family: "Bebas Neue", sans-serif;
@@ -92,7 +92,7 @@ button p{
 
 .context,
 button p{
-  font-size: 17px;
+  font-size: 1.063rem;
   margin-top: 10px;
   margin-bottom: 20px;
 }
@@ -115,7 +115,7 @@ button p{
   display: none;
 }
 .savoir-plus-bouton p {
-  font-size: 25px;
+  font-size: 1.563rem;
 }
 
 .hidden {
@@ -125,7 +125,7 @@ button p{
   opacity: 0;
 }
 .retour-projet {
-    font-size: 20px;
+    font-size: 1.25rem;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -184,7 +184,7 @@ button p{
   margin-top: auto;
   margin-bottom: auto;
   font-weight: 800;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 .html-language {
   margin-top: 20px;
@@ -355,7 +355,7 @@ button p{
 }
 @media (min-width: 700px) {
   .projet h2 {
-    font-size: 90px;
+    font-size: 5.625rem;
   }
 
   .projet img {
@@ -387,18 +387,18 @@ button p{
     margin-left: 20px;
   }
   .sub-title-projet {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
   .context,
   button p {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   .savoir-plus-bouton {
     margin-top: 10px;
     width: 80%;
   }
   .savoir-plus-bouton p {
-    font-size: 25px;
+    font-size: 1.563rem;
     text-align: center;
   }
 }
@@ -545,7 +545,7 @@ button p{
     margin: auto;
   }
   .description-savoir-plus {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   .objectif-bis {
     justify-content: center;
@@ -560,11 +560,11 @@ button p{
     left: 65vw;
   }
   .description-savoir-plus h3 {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
   .description-savoir-plus p,
   .description-savoir-plus ul {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   .categorie p {
     max-width: 60%;

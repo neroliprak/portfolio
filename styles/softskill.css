@@ -23,7 +23,7 @@
 }
 
 .mais-aussi p {
-  font-size: 90px;
+  font-size: 5.625rem;
   color: white;
   font-family: "Bebas Neue", sans-serif;
   font-weight: 800;
@@ -92,7 +92,7 @@
   width: 70%;
   padding-left: 20px;
   padding-right: 20px;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: white;
 }
 .autonome {
@@ -125,12 +125,11 @@
 .mais-aussi-desktop {
   display: none;
 }
-.mais-aussi1-phone{
+.mais-aussi1-phone {
   z-index: 2;
   position: relative;
   right: -200px;
 }
-
 
 @media (min-width: 700px) {
   .soft-skill-img-div {
@@ -138,13 +137,16 @@
     text-align: center;
     justify-content: center;
   }
-  .soft-skill-img-1,.soft-skill-img-2,.soft-skill-img-3,.soft-skill-img-4,.soft-skill-img-5 {
+  .soft-skill-img-1,
+  .soft-skill-img-2,
+  .soft-skill-img-3,
+  .soft-skill-img-4,
+  .soft-skill-img-5 {
     width: 230px;
     height: 230px;
   }
   .soft-skill-img-2 {
     width: 110%;
-
   }
   .soft-skill-img-3 {
     width: 80%;
@@ -171,10 +173,10 @@
     padding-left: 15px;
     padding-right: 15px;
   }
-  .soft-skill-1{
+  .soft-skill-1 {
     margin-right: -20px;
   }
-  .soft-skill-3{
+  .soft-skill-3 {
     margin-top: 20px;
     margin-right: -70px;
   }
@@ -183,7 +185,7 @@
     margin-left: 0px;
   }
   .soft-skill-4 {
-     margin-top: 20px;
+    margin-top: 20px;
     margin-left: 50px;
   }
   .soft-skill-5 {
@@ -228,10 +230,12 @@
     right: -700px;
     display: flex;
   }
-  .soft-skill-img-1,.soft-skill-img-2,.soft-skill-img-3,.soft-skill-img-4,.soft-skill-img-5 {
+  .soft-skill-img-1,
+  .soft-skill-img-2,
+  .soft-skill-img-3,
+  .soft-skill-img-4,
+  .soft-skill-img-5 {
     width: 250px;
     height: 250px;
   }
-
- 
 }

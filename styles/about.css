@@ -17,7 +17,7 @@
 .apropos-prenom {
   margin: auto;
   text-align: center;
-  font-size: 25px;
+  font-size: 1.563rem;
   color: #0bcaf4;
   font-weight: 300;
 }
@@ -27,7 +27,7 @@
   margin: auto;
   margin-top: 80px;
   padding-bottom: 80px;
-  font-size: 23px;
+  font-size: 1.438rem;
   gap: 1em;
   justify-content: center;
   text-align: center;
@@ -59,13 +59,13 @@
 .apropos-titre {
   font-family: "Bebas Neue", sans-serif;
   color: #0bcaf4;
-  font-size: 50px;
+  font-size: 3.125rem;
   font-weight: 800;
 }
 
 .apropos-texte {
   color: white;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 100;
 }
 .apropos-titre-phone{
@@ -90,7 +90,7 @@
 @media (min-width: 600px) {
   .apropos-titre-tablette {
     display: block;
-    font-size: 70px;
+    font-size: 4.375rem;
     margin-bottom: 40px;
     position: relative;
     text-align: center;
@@ -112,7 +112,7 @@
   /* Partie apropos */
   .apropos-titre-desktop {
     display: block;
-    font-size: 78px;
+    font-size: 4.875rem;
     border: none;
   }
   .apropos-titre-phone {
@@ -142,12 +142,12 @@
     border-left: #0bcaf4 solid 5px;
   }
   .apropos-texte {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   .apropos-texte2 {
     margin-top: -2px;
-    font-size: 25px;
+    font-size: 1.563rem;
     font-family: "Bebas Neue", sans-serif;
     color: #ffffff;
   }

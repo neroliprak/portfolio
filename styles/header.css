@@ -24,7 +24,7 @@ header {
 .subtitles {
   font-family: "Bebas Neue", sans-serif;
   text-align: center;
-  font-size: 35px;
+  font-size: 2.188rem;
 }
 .subtitle1 {
   color: var(--blue);
@@ -137,6 +137,6 @@ header {
     left: -10px;
   }
   .subtitles {
-    font-size: 55px;
+    font-size: 3.438rem;
   }
 }

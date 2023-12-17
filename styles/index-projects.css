@@ -1,7 +1,7 @@
 .projects {
   font-family: "Bebas Neue", sans-serif;
   color: #ffffff;
-  font-size: 30px;
+  font-size: 1.875rem;
   background-image: url(./../images/index-main/bg-project11.svg);
   background-repeat: none;
   overflow: hidden;
@@ -16,7 +16,7 @@
   justify-content: center;
   margin-left: 20px;
   margin-right: 20px;
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 
 .projet {
