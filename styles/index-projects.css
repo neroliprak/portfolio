@@ -45,6 +45,10 @@
   opacity: 0.9;
   filter: blur(2px);
 }
+.projet a:focus{
+  filter: blur(0px);
+  border: 10px solid white;
+}
 
 .description-projet {
   text-align: center;

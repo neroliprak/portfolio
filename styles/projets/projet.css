@@ -1,5 +1,5 @@
 h1 {
-  margin-top: 50px;
+  margin-top: 100px;
   font-family: "Bebas Neue", sans-serif;
   color: white;
   text-align: center;
@@ -261,6 +261,7 @@ button p{
 .container-projet-dataviz {
     background: radial-gradient(50% 50% at 50% 50%, #92e3a9 0%, #4d9e64 100%);
     padding-bottom: 20px;
+    
   }
 .container-projet-referencement{
     background: radial-gradient(50% 50% at 50% 50%, #a58bcc 0%, #7a58ab 100%);

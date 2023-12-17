@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/projets/dev.css">
+    <link rel="stylesheet" href="./styles/projets/projet.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
     <!-- FONT-Varta : 400 & 700, FONT-Bebas Neue : 400, FONT-Source Code Pro : 400 & 700 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +18,17 @@
 </head>
 
 <body>
-
+    <nav class="sticky">
+        <!-- LeftLogo -->
+        <a href="./index.html"><img class="website-logo" src="./images/header/white-logo.svg" alt="Accueil"></a>
+        <!-- RightLink -->
+        <ul>
+            <li><a class="nav-link about-link dev-link" href="./dev.html">Développement</a></li>
+            <li><a class="nav-link projects-link creation-link" href="./creation-artistique.html">Création
+            </a></li>
+            <li><a class="nav-link contact-link audio-link" href="./audiovisuel.html">Audiovisuel</a></li>
+        </ul>
+    </nav>
     <!-- Introduction à ce que c'est que le développement web pour moi -->
     <h1><span class="main-title main-title-dev">Mes projets</span><br><span class="sub-title sub-title-design">Création
             numérique - design & maquette</span>
@@ -659,6 +671,24 @@
             </div>
         </div>
     </div>
+    <footer id="footer">
+        <p>Néroli Prak</p>
+        <p>neroliprak@gmail.com</p>
+        <div class="rs-wrap">
+            <a href="https://github.com/neroliprak">
+                <div class="github-rs">
+                    <img src="./images/header/icon-github.svg" alt="">
+                    Github
+                </div>
+            </a>
+            <a href="https://www.linkedin.com/in/neroli-prak/">
+                <div class="linkedin-rs">
+                    <img src="./images/header/icon-linkedin.svg" alt="">
+                    Linkedin
+                </div>
+            </a>
+        </div>
+    </footer>
     <script src="./scripts/script.js"></script>
 </body>
 
