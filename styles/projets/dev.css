@@ -26,6 +26,9 @@ h3 {
 .sub-title-audiovisuel{
   color: #F47500;
 }
+.sub-title-design{
+  color: #FFE817;
+}
 .separator,
 .separator1 {
   width: 30%;
@@ -323,6 +326,32 @@ button p{
   padding-bottom: 20px;
 }
 
+/* PARTIE DESIGN */
+
+.container-projet-campagnePub{
+  background: radial-gradient(50% 50% at 50% 50%, #4D80BD 0%, #406A9C 100%);
+  padding-bottom: 20px;
+  color: white;
+}
+.container-projet-mmind{
+  background: radial-gradient(50% 50% at 50% 50%, #FFD4A8 0%, #DFA86F 100%);
+  padding-bottom: 20px;
+}
+.container-projet-philarmonieParis{
+  background: radial-gradient(50% 50% at 50% 50%, #B9005C 0%, #99034E 100%);
+  padding-bottom: 20px;
+  color: white;
+}
+.container-projet-timeCalendar{
+  background: radial-gradient(50% 50% at 50% 50%, #D9728C 0%, #B05D72 100%);
+  padding-bottom: 20px;
+  color: white;
+}
+.container-projet-journalQuartier{
+  background: radial-gradient(50% 50% at 50% 50%, #3D97C5 0%, #3584AC 100%);
+  padding-bottom: 20px;
+  color: white;
+}
 @media (min-width: 700px) {
   .projet h2 {
     font-size: 90px;

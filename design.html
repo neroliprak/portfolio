@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/projets/design.css">
+    <link rel="stylesheet" href="./styles/projets/dev.css">
     <!-- FONT-Varta : 400 & 700, FONT-Bebas Neue : 400, FONT-Source Code Pro : 400 & 700 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,102 +16,650 @@
 </head>
 
 <body>
-    <h1><span class="h1-1">Mes projets</span> <br> <span class="h1-2">Création numérique - design & maquette</span></h1>
+
+    <!-- Introduction à ce que c'est que le développement web pour moi -->
+    <h1><span class="main-title main-title-dev">Mes projets</span><br><span class="sub-title sub-title-design">Création
+            numérique - design & maquette</span>
+    </h1>
     <hr class="separator">
-    <div class="presentation-dev">
-        <img class="perso-desktop" src="./images/projets/Perso-design.svg" alt="">
-        <div class="presentation-dev-texte">
+    <div class="development-presentation">
+        <img class="desktop-image" src="./images/projets/Perso-design.svg" alt="">
+        <div>
             <h2>Le design ?</h2>
-            <p>Le design fait appelle à des méthodologies, une originalité, mais surtout une créativité sans faille, ce sont cela qui m'attire dans cet univers. Chaque oeuvre est unique et chaque individu peut apporter une valeur ajoutée, c'est pourquoi le travail d'équipe est une chose que je considère cruciale et enrichissant. Au quotidien, c'est une chose que je trouve important, puisque sans le design, la vie serait moins riche en couleur et visuelle. Lors des mes deux années en BUT MMI, j'ai pu apprendre divers outils me permettant de m'épanouir dans n'importe qu'elle projet les plus ambitieux.</p>
+            <p>Le design fait appel à des méthodologies, une originalité, mais surtout une créativité sans faille. Tout cela m'attire dans cet univers. Chaque oeuvre est unique et chaque individu peut apporter une
+                valeur ajoutée. C'est pourquoi le travail d'équipe est une chose que je considère comme cruciale et
+                enrichissant. Au quotidien, c'est une chose que je trouve importante, puisque sans le design, la vie
+                serait moins riche en couleur et visuel. Lors de mes deux années en BUT MMI, j'ai pu apprendre divers
+                outils me permettant de m'épanouir dans n'importe quel projet les plus ambitieux.</p>
+                <br>
+            (Cliqué sur les images pour accéder au projet)
         </div>
     </div>
-    <svg class="appelle-scroll" xmlns="http://www.w3.org/2000/svg" width="7" height="500" viewBox="0 0 7 1222"
+    <svg class="scroll-appel" xmlns="http://www.w3.org/2000/svg" width="7" height="300" viewBox="0 0 7 1222"
         fill="none">
-        <path d="M3.5 0.5V1222" stroke="#FFE817" stroke-width="10" />
+        <path d="M3.5 0.5V1222" stroke="#FFE817" stroke-width="15" />
     </svg>
-    <hr class="separator1">
-     <section>
-        <div class="container-projet">
 
+    <!-- -------------------- PROJET CAMPAGNE PUBLICITAIRE -------------------- -->
 
-            <div class="projet projet1">
-                <a class="projet-link" href="">
-
-                    <div class="titre-p titre-p1">
-                        <h2>Campagne publicitaire</h2>
-                        <p>Dataviz est un projet ayant pour objectif de mettre en valeur un jeu de donnée à travers des
-                            graphiques ... </p>
-                    </div>
-                    <img src="./images/projets/AffichePoisson.png" alt="">
-                </a>
-
+    <div class="container-projet-campagnePub opacity-all" id="campagnePub">
+        <div class="projet projet-campagnePub">
+            <div class="projet-titre projet-titre-campagnePub">
+                <h2>Campagne publicitaire </h2>
+                <div class="border-left">
+                    <p class="sub-title-projet">La fête de Bonneuil-Sur-Marne</p>
+                    <p class="context">Le projet consiste à réaliser une campagne publicitaire visant à promouvoir un événement au sein de notre ville. J’ai décidé de le réaliser sur la ville de Bonneuil et en particulier sur la fête de Bonneuil qui a eu lieu le 30 septembre 2023. 
+                    </p>
+                    <button class="savoir-plus-bouton savoir-plus-desktop visible"
+                        onclick="toggleProjet('projet-campagnePub')">
+                        <p>↓ En savoir plus sur la campagne publicitaire ↓</p>
+                    </button>
+                </div>
             </div>
+            <a href="./docProjet/Fête de Bonneuil - Néroli Prak & Solène Jeannin.pdf" ><img class="campagnePub-img"
+                    src="./images/projets/AffichePoisson.png" alt="">
             </a>
-            <div class="projet projet1-2 ">
-                <a class="projet-link" href="">
-                    <div class="titre-p titre-p1-2">
-                        <h2>MMIND - Refonte de la charte graphique du compte instagram MMIND</h2>
-                        <p>Dans le web, l'importance de se démarquer des autres sites webs est primordiale. Dans lequel
-                            le
-                            référencement rentre en jeu ...</p>
+            <button class="savoir-plus-bouton savoir-plus-phone visible" onclick="toggleProjet('projet-campagnePub')">
+                <p>↓ En savoir plus sur la campagne publicitaire ↓</p>
+            </button>
+        </div>
+        <div class="description-savoir-plus hidden" id="projet-campagnePub">
+            <div>
+                <div class="objectif spacing">
+                    <div class="objectif-bis container-flex">
+                        <img class="objectif-img" src="./images/projets/crosshair (2).svg" alt="">
+                        <h3>Objectif</h3>
                     </div>
-                    <img src="./images/projets/RefontMMIND.png" alt="">
-                </a>
-            </div>
-            <div class="projet projet2">
-                <a class="projet-link" href="">
-                    <div class="titre-p titre-p2">
-                    <h2>Philarmonie de paris - Refonte du site dans un univers contraire</h2>
-                    <p>L'un des enjeux de ce monde est de combattre la surconsommation et les méthodes de cultivation
-                        qui pourrissent nos sols ...</p>
+                    <p>L’objectif de ce projet est de réaliser une affiche, des bannières, un logo, des mock-ups et un site internet décliné sous format téléphone, tablette et ordinateur. Il fallait trouver une charte graphique et trouver des titres impactants. </p>
+                </div>
+                <div class="hard-soft">
+                    <div class="hardskill spacing">
+                        <div class="container-flex">
+                            <img class="hardskill-img" src="./images/projets/terminal.svg" alt="">
+                            <h3>Langages et logiciels</h3>
+                        </div>
+                        <div class="languages">
+                            <div class="html-language container-flex">
+                                <img class="language-img" src="./images/technology-svg/figma.png" alt="">
+                                <p>Figma</p>
+                            </div>
+                            <div class="html-language container-flex">
+                                <img class="language-img" src="./images/technology-svg/photoshop.png" alt="">
+                                <p>Photoshop</p>
+                            </div>
+                            <div class="html-language container-flex">
+                                <img class="language-img" src="./images/technology-svg/canva.png" alt="">
+                                <p>Canva</p>
+                            </div>
+                        </div>
+                        <hr class="separator2">
                     </div>
-                    <img src="./images/projets/RefontePhilarmonieParis.png" alt="">
-                </a>
-            </div>
-            <div class="projet projet3">
-                <a class="projet-link" href="">
-                    <div class="titre-p titre-p3">
-                    <h2>Projet Citoyen - Maquette du site web pour l'intégration sur wordpress</h2>
-                    <p>De plus en plus d'animaux se font abandonner et notamment en France. L'objectif est d'apporter une présence en ligne à travers un site web et une communication ...</p>
+                    <hr class="separator-tablette">
+                    <div class="softskill spacing">
+                        <div class="container-flex">
+                            <img class="softskill" src="./images/projets/softskill-img.svg" alt="">
+                            <h3>Softskills</h3>
+                        </div>
+                        <ul>
+                            <li>
+                                <p>Travail d'équipe</p>
+                            </li>
+                            <li>
+                                <p>Créativité</p>
+                            </li>
+                        </ul>
+                        <hr class="separator2">
                     </div>
-                    <img src="./images/index-project/Prj-Citoyen.png" alt="">
-                </a>
-            </div>
-            <div class="projet projet4">
-                <a class="projet-link" href="">
-                    <div class="titre-p titre-p4">
-                    <h2>Timecalendar - un gif de promotion publicitaire</h2>
-                    <p>Dans le web, l'importance de se démarquer des autres sites webs est primordiale. Dans lequel
-                        le
-                        référencement rentre en jeu...</p>
+                </div>
+                <div>
+                    <div class="info">
+                        <div class="team">
+                            <img src="./images/projets/Users1.svg" alt="">
+                            <p>Équipe de deux</p>
+                        </div>
+                        <div class="date">
+                            <img src="./images/projets/clock.svg" alt="">
+                            <p>Octobre - Novembre 2023</p>
+                        </div>
+                        <div class="study">
+                            <img class="study-img" src="./images/projets/diplome.svg" alt="">
+                            <p>(Projet scolaire) BUT MMI 2 - Semestre 3</p>
+                        </div>
                     </div>
-                    <img src="./images/projets/GIFTimeCalendar.gif" alt="">
-                </a>
-            </div>
-            <div class="projet projet5">
-                <a class="projet-link" href="">
-                    <div class="titre-p titre-p5">
-                    <h2>Journal de quartier - Ville de bonneuil-sur-marne</h2>
-                    <p>Dans le web, l'importance de se démarquer des autres sites webs est primordiale. Dans lequel
-                        le
-                        référencement rentre en jeu...</p>
+                    <hr class="separator2">
+                </div>
+                <div class="categorie competence">
+                    <div class="container-flex">
+                        <div class="competence-img">
+                            <img src="./images/technology-svg/perso-competence.svg" alt="">
+                        </div>
+                        <div class="categorie-text">
+                            <h3>
+                                Compétences développées
+                            </h3>
+                            <ul>
+                                <li>Réalisation d’une affiche A4.</li>
+                                <li>Réalisation de bannières de différentes tailles.</li>
+                                <li>Réalisation de mock-up.</li>
+                                <li>Réalisation d’un logo.</li>
+                                <li>Réalisation d’une maquette de site internet décliné en format téléphone, tablette et ordinateur.</li>
+                            </ul>
+                        </div>
+
                     </div>
-                    <img src="./images/index-project/JQ.png" alt="">
-                </a>
-            </div>
-            <div class="projet projet6">
-                <a class="projet-link" href="">
-                    <div class="titre-p titre-p6">
-                    <h2>Startup fictif - EtudFrigo, une application pour les étudiants</h2>
-                    <p>Dans le web, l'importance de se démarquer des autres sites webs est primordiale. Dans lequel
-                        le
-                        référencement rentre en jeu...</p>
+                </div>
+                <div class="categorie bilan">
+                    <div class="container-flex">
+                        <div class="bilan-img">
+                            <img src="./images/technology-svg/perso-bilan.svg" alt="">
+                        </div>
+                        <div class="categorie-text">
+                            <h3>
+                                Mon bilan
+                            </h3>
+                            <p>C’est un projet que j’ai apprécié réaliser avec ma camarade. Nous avons su communiquer ensemble et s’entendre sur une charte graphique qui nous a rapidement plu. Nous nous sommes rapidement réparti les tâches. Travaillé en binôme est enrichissant. En effet, nous avons pu discuter de nos points de vue et de nos désaccords. Réaliser des affiches me plaît bien, puisque cela fait appel à notre créativité. 
+                            </p>
+                        </div>
+
                     </div>
-                    <img src="./images/projets/EtudFrigo.png" alt="">
-                </a>
+                </div>
+                <button class="retour-projet visible" onclick="toggleProjet('projet-campagnePub')">
+                    <a class="lien-haut" href="#campagnePub">FERMER</a>
+                </button>
             </div>
         </div>
-    </section>
+    </div>
+
+    <!-- -------------------- PROJET REFONTE MMIND -------------------- -->
+
+    <div class="container-projet-mmind opacity-all" id="mmind">
+        <div class="projet projet-mmind">
+            <div class="projet-titre projet-titre-mmind">
+                <h2>Refonte MMIND
+                </h2>
+                <div class="border-left">
+                    <p class="sub-title-projet">Le compte instagram d’actualité de MMI Champs-Sur-Marne en anglais.</p>
+                    <p class="context">L’année débute et le compte instagram a besoin d’un renouveau. Laissons place à un nouveau design et dites au revoir à l’ancien.
+                    </p>
+                    <button class="savoir-plus-bouton savoir-plus-desktop visible"
+                        onclick="toggleProjet('projet-mmind')">
+                        <p>↓ En savoir plus sur la refonte MMIND ↓</p>
+                    </button>
+                </div>
+            </div>
+            <a href="./docProjet/MMIND Solène Néroli Pauline Lou-Anne.pdf"><img class="mmind-img"
+                    src="./images/projets/RefontMMIND.png" alt="">
+            </a>
+            <button class="savoir-plus-bouton savoir-plus-phone visible" onclick="toggleProjet('projet-mmind')">
+                <p>↓ En savoir plus sur la refonte MMIND ↓</p>
+            </button>
+        </div>
+        <div class="description-savoir-plus hidden" id="projet-mmind">
+            <div>
+                <div class="objectif spacing">
+                    <div class="objectif-bis container-flex">
+                        <img class="objectif-img" src="./images/projets/crosshair (2).svg" alt="">
+                        <h3>Objectif</h3>
+                    </div>
+                    <p>L’objectif était de repenser le compte MMIND et d’y apporter de la nouveauté. Le but : créer une nouvelle charte graphique, de nouvelles idées et à la fin le présenter dans une soutenance en anglais. 
+                    </p>
+                </div>
+                <div class="hard-soft">
+                    <div class="hardskill spacing">
+                        <div class="container-flex">
+                            <img class="hardskill-img" src="./images/projets/terminal.svg" alt="">
+                            <h3>Langages et logiciels</h3>
+                        </div>
+                        <div class="languages">
+                            <div class="html-language container-flex">
+                                <img class="language-img" src="./images/technology-svg/figma.png" alt="">
+                                <p>Figma</p>
+                            </div>
+                            <div class="html-language container-flex">
+                                <img class="language-img" src="./images/technology-svg/canva.png" alt="">
+                                <p>Canva (Présentation oral)</p>
+                            </div>
+                        </div>
+                        <hr class="separator2">
+                    </div>
+                    <hr class="separator-tablette">
+                    <div class="softskill spacing">
+                        <div class="container-flex">
+                            <img class="softskill" src="./images/projets/softskill-img.svg" alt="">
+                            <h3>Softskills</h3>
+                        </div>
+                        <ul>
+                            <li>
+                                <p>Travail d'équipe</p>
+                            </li>
+                            <li>
+                                <p>Créativité</p>
+                            </li>
+                        </ul>
+                        <hr class="separator2">
+                    </div>
+                </div>
+                <div>
+                    <div class="info">
+                        <div class="team">
+                            <img src="./images/technology-svg/UserQuatre.svg" alt="">
+                            <p>Équipe de quatre</p>
+                        </div>
+                        <div class="date">
+                            <img src="./images/projets/clock.svg" alt="">
+                            <p>Octobre - Novembre 2023</p>
+                        </div>
+                        <div class="study">
+                            <img class="study-img" src="./images/projets/diplome.svg" alt="">
+                            <p>(Projet scolaire) BUT MMI 2 - Semestre 3</p>
+                        </div>
+                    </div>
+                    <hr class="separator2">
+                </div>
+                <div class="categorie competence">
+                    <div class="container-flex">
+                        <div class="competence-img">
+                            <img src="./images/technology-svg/perso-competence.svg" alt="">
+                        </div>
+                        <div class="categorie-text">
+                            <h3>
+                                Compétences développées
+                            </h3>
+                            <ul>
+                                <li>Réalisation d’un moodboard.</li>
+                                <li>Réalisation du design du compte instagram de MMIND.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="categorie bilan">
+                    <div class="container-flex">
+                        <div class="bilan-img">
+                            <img src="./images/technology-svg/perso-bilan.svg" alt="">
+                        </div>
+                        <div class="categorie-text">
+                            <h3>
+                                Mon bilan
+                            </h3>
+                            <p>Il s’agissait pour moi d’un challenge. Trouver une charte graphique à quatre n'était pas évident, puisque nous avions tous des idées différentes. Toutefois, nous avons su surmonter cela en communiquant et avons voté sur le design qui nous paraissait le mieux objectivement.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <button class="retour-projet visible" onclick="toggleProjet('projet-mmind')">
+                    <a class="lien-haut" href="#mmind">FERMER</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+     <!-- -------------------- PROJET REFONTE Philarmonie de Paris -------------------- -->
+
+     <div class="container-projet-philarmonieParis opacity-all" id="philarmonieParis">
+        <div class="projet projet-philarmonieParis">
+            <div class="projet-titre projet-titre-philarmonieParis">
+                <h2>Refonte Philarmonie de Paris
+                </h2>
+                <div class="border-left">
+                    <p class="sub-title-projet">Une refonte totalement nouvelle.</p>
+                    <p class="context">Le site de la philharmonie de Paris a un design professionnel, sérieux, organisé. Et si on faisait le contraire ? En le rendant désordonné, avec des couleurs vives, des motifs extravagants. 
+                    </p>
+                    <button class="savoir-plus-bouton savoir-plus-desktop visible"
+                        onclick="toggleProjet('projet-philarmonieParis')">
+                        <p>↓ En savoir plus sur la refonte de la Philarmonie de Paris ↓</p>
+                    </button>
+                </div>
+            </div>
+            <a href="https://www.figma.com/file/2LdML9F1NHpz28fCb4wVB2/N%C3%A9roli-Philarmonie-de-Paris?type=design&mode=design&t=QeBq5upuLPtj08of-1"><img class="philarmonieParis-img"
+                    src="./images/projets/RefontePhilarmonieParis.png" alt="">
+            </a>
+            <button class="savoir-plus-bouton savoir-plus-phone visible" onclick="toggleProjet('projet-philarmonieParis')">
+                <p>↓ En savoir plus sur la refonte de la Philarmonie de Paris ↓</p>
+            </button>
+        </div>
+        <div class="description-savoir-plus hidden" id="projet-philarmonieParis">
+            <div>
+                <div class="objectif spacing">
+                    <div class="objectif-bis container-flex">
+                        <img class="objectif-img" src="./images/projets/crosshair (2).svg" alt="">
+                        <h3>Objectif</h3>
+                    </div>
+                    <p>L’objectif de ce projet consiste à faire la refonte en maquette d’un site internet en un site complètement opposé. Il était donc nécessaire d’analyser l’univers du site de la Philharmonie de Paris pour en dépeindre son contraire. 
+
+
+                    </p>
+                </div>
+                <div class="hard-soft">
+                    <div class="hardskill spacing">
+                        <div class="container-flex">
+                            <img class="hardskill-img" src="./images/projets/terminal.svg" alt="">
+                            <h3>Langages et logiciels</h3>
+                        </div>
+                        <div class="languages">
+                            <div class="html-language container-flex">
+                                <img class="language-img" src="./images/technology-svg/figma.png" alt="">
+                                <p>Figma</p>
+                            </div>
+                        </div>
+                        <hr class="separator2">
+                    </div>
+                    <hr class="separator-tablette">
+                    <div class="softskill spacing">
+                        <div class="container-flex">
+                            <img class="softskill" src="./images/projets/softskill-img.svg" alt="">
+                            <h3>Softskills</h3>
+                        </div>
+                        <ul>
+                            <li>
+                                <p>Originalité</p>
+                            </li>
+                            <li>
+                                <p>Créativité</p>
+                            </li>
+                        </ul>
+                        <hr class="separator2">
+                    </div>
+                </div>
+                <div>
+                    <div class="info">
+                        <div class="team">
+                            <img src="./images/technology-svg/UserSolo.svg" alt="">
+                            <p>Seule</p>
+                        </div>
+                        <div class="date">
+                            <img src="./images/projets/clock.svg" alt="">
+                            <p>Février - Juin 2023</p>
+                        </div>
+                        <div class="study">
+                            <img class="study-img" src="./images/projets/diplome.svg" alt="">
+                            <p>(Projet scolaire) BUT MMI 2 - Semestre 3</p>
+                        </div>
+                    </div>
+                    <hr class="separator2">
+                </div>
+                <div class="categorie competence">
+                    <div class="container-flex">
+                        <div class="competence-img">
+                            <img src="./images/technology-svg/perso-competence.svg" alt="">
+                        </div>
+                        <div class="categorie-text">
+                            <h3>
+                                Compétences développées
+                            </h3>
+                            <ul>
+                                <li>Réalisation d’un zonage sur Figma.</li>
+                                <li>Réalisation d’un moodboard sur Figma & Pinterest.</li>
+                                <li>Réalisation d’une maquette figma en fonction d’un moodboard.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <button class="retour-projet visible" onclick="toggleProjet('projet-philarmonieParis')">
+                    <a class="lien-haut" href="#philarmonieParis">FERMER</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+     <!-- -------------------- PROJET GIF TIMECALENDAR -------------------- -->
+
+     <div class="container-projet-timeCalendar opacity-all" id="timeCalendar">
+        <div class="projet projet-timeCalendar">
+            <div class="projet-titre projet-titre-timeCalendar">
+                <h2>TimeCalendar
+                </h2>
+                <div class="border-left">
+                    <p class="sub-title-projet">Promotion d'une application en GIF commercial</p>
+                    <p class="context">
+                        TimeCalendar nous rend la vie meilleure à travers sa fonctionnalité principale, proposée notre emploi du temps de façon plus ergonomique et efficace. J'ai donc eu l'envie de rendre hommage et d'en faire la promotion à travers un GIF. 
+                    </p>
+                    <button class="savoir-plus-bouton savoir-plus-desktop visible"
+                        onclick="toggleProjet('projet-timeCalendar')">
+                        <p>↓ En savoir plus sur le GIF sur TimeCalendar ↓</p>
+                    </button>
+                </div>
+            </div>
+            <a href="https://drive.google.com/file/d/1qw-QpCLSTgOawBBlTmGrLFQnvCz6tPDU/view?usp=drive_link"><img class="timeCalendar-img"
+                    src="./images/projets/GIFTimeCalendar.gif" alt="">
+            </a>
+            <button class="savoir-plus-bouton savoir-plus-phone visible" onclick="toggleProjet('projet-timeCalendar')">
+                <p>↓ En savoir plus sur le GIF sur TimeCalendar ↓</p>
+            </button>
+        </div>
+        <div class="description-savoir-plus hidden" id="projet-timeCalendar">
+            <div>
+                <div class="objectif spacing">
+                    <div class="objectif-bis container-flex">
+                        <img class="objectif-img" src="./images/projets/crosshair (2).svg" alt="">
+                        <h3>Objectif</h3>
+                    </div>
+                    <p>L'objectif de ce projet est de réaliser un GIF sur Photoshop, dans le but de réaliser une publicité promotionnelle pour un service ou un produit. Il est nécessaire de faire donner envie avec un texte accrocheur. 
+                    </p>
+                </div>
+                <div class="hard-soft">
+                    <div class="hardskill spacing">
+                        <div class="container-flex">
+                            <img class="hardskill-img" src="./images/projets/terminal.svg" alt="">
+                            <h3>Langages et logiciels</h3>
+                        </div>
+                        <div class="languages">
+                            <div class="html-language container-flex">
+                                <img class="language-img" src="./images/technology-svg/figma.png" alt="">
+                                <p>Figma</p>
+                            </div>
+                            <div class="html-language container-flex">
+                                <img class="language-img" src="./images/technology-svg/photoshop.png" alt="">
+                                <p>Photoshop</p>
+                            </div>
+                            <div class="html-language container-flex">
+                                <img class="language-img" src="./images/technology-svg/illustrator.png" alt="">
+                                <p>Illustrator</p>
+                            </div>
+                        </div>
+                        <hr class="separator2">
+                    </div>
+                    <hr class="separator-tablette">
+                    <div class="softskill spacing">
+                        <div class="container-flex">
+                            <img class="softskill" src="./images/projets/softskill-img.svg" alt="">
+                            <h3>Softskills</h3>
+                        </div>
+                        <ul>
+                            <li>
+                                <p>Originalité</p>
+                            </li>
+                            <li>
+                                <p>Créativité</p>
+                            </li>
+                        </ul>
+                        <hr class="separator2">
+                    </div>
+                </div>
+                <div>
+                    <div class="info">
+                        <div class="team">
+                            <img src="./images/technology-svg/UserSolo.svg" alt="">
+                            <p>Seule</p>
+                        </div>
+                        <div class="date">
+                            <img src="./images/projets/clock.svg" alt="">
+                            <p>Novembre 2022</p>
+                        </div>
+                        <div class="study">
+                            <img class="study-img" src="./images/projets/diplome.svg" alt="">
+                            <p>(Projet scolaire) BUT MMI 1 - Semestre 1
+                            </p>
+                        </div>
+                    </div>
+                    <hr class="separator2">
+                </div>
+                <div class="categorie competence">
+                    <div class="container-flex">
+                        <div class="competence-img">
+                            <img src="./images/technology-svg/perso-competence.svg" alt="">
+                        </div>
+                        <div class="categorie-text">
+                            <h3>
+                                Compétences développées
+                            </h3>
+                            <ul>
+                                <li>Réalisation d’un storyboard.</li>
+                                <li>Réalisation de formes sur Illustrator.</li>
+                                <li>Réalisation d'un GIF sur photoshop.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <button class="retour-projet visible" onclick="toggleProjet('projet-timeCalendar')">
+                    <a class="lien-haut" href="#timeCalendar">FERMER</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------- PROJET JOURNAL DE QUARTIER -------------------- -->
+
+    <div class="container-projet-journalQuartier opacity-all" id="journalQuartier">
+        <div class="projet projet-journalQuartier">
+            <div class="projet-titre projet-titre-journalQuartier">
+                <h2>Journal de quartier
+                </h2>
+                <div class="border-left">
+                    <p class="sub-title-projet">La ville de Bonneuil-Sur-Marne</p>
+                    <p class="context">
+                        L'ensemble des villes possèdent un journal de ville où ils racontent leurs actualités et nouveautés. Toutefois, rare sont les journaux de quartiers. C'est dans ce projet où nous nous intéressons plus précisément à l'histoire du quartier, les habitants, les loisirs... J'ai donc choisi le quartier où je vis : Le Centre Ancien, de Bonneuil-Sur-Marne.
+                    </p>
+                    <button class="savoir-plus-bouton savoir-plus-desktop visible"
+                        onclick="toggleProjet('projet-journalQuartier')">
+                        <p>↓ En savoir plus sur mon journal de quartier ↓</p>
+                    </button>
+                </div>
+            </div>
+            <a href="./docProjet/JournalDeQuartier.pdf"><img class="journalQuartier-img"
+                    src="./images/index-project/JQ.png" alt="">
+            </a>
+            <button class="savoir-plus-bouton savoir-plus-phone visible" onclick="toggleProjet('projet-journalQuartier')">
+                <p>↓ En savoir plus sur mon journal de quartier ↓</p>
+            </button>
+        </div>
+        <div class="description-savoir-plus hidden" id="projet-journalQuartier">
+            <div>
+                <div class="objectif spacing">
+                    <div class="objectif-bis container-flex">
+                        <img class="objectif-img" src="./images/projets/crosshair (2).svg" alt="">
+                        <h3>Objectif</h3>
+                    </div>
+                    <p>L'objectif de ce projet est de réaliser un GIF sur Photoshop, dans le but de réaliser une publicité promotionnelle pour un service ou un produit. Il est nécessaire de faire donner envie avec un texte accrocheur. 
+                    </p>
+                </div>
+                <div class="hard-soft">
+                    <div class="hardskill spacing">
+                        <div class="container-flex">
+                            <img class="hardskill-img" src="./images/projets/terminal.svg" alt="">
+                            <h3>Langages et logiciels</h3>
+                        </div>
+                        <div class="languages">
+                            <div class="html-language container-flex">
+                                <img class="language-img" src="./images/technology-svg/figma.png" alt="">
+                                <p>Figma</p>
+                            </div>
+                            <div class="html-language container-flex">
+                                <img class="language-img" src="./images/technology-svg/photoshop.png" alt="">
+                                <p>Photoshop</p>
+                            </div>
+                            <div class="html-language container-flex">
+                                <img class="language-img" src="./images/technology-svg/illustrator.png" alt="">
+                                <p>Illustrator</p>
+                            </div>
+                            <div class="html-language container-flex">
+                                <img class="language-img" src="./images/technology-svg/indesign.png" alt="">
+                                <p>Indesign</p>
+                            </div>
+                        </div>
+                        <hr class="separator2">
+                    </div>
+                    <hr class="separator-tablette">
+                    <div class="softskill spacing">
+                        <div class="container-flex">
+                            <img class="softskill" src="./images/projets/softskill-img.svg" alt="">
+                            <h3>Softskills</h3>
+                        </div>
+                        <ul>
+                            <li>
+                                <p>Créativité</p>
+                            </li>
+                            <li>
+                                <p>Communiquer</p>
+                            </li>
+                            <li>
+                                <p>Ouverture au monde</p>
+                            </li>
+                        </ul>
+                        <hr class="separator2">
+                    </div>
+                </div>
+                <div>
+                    <div class="info">
+                        <div class="team">
+                            <img src="./images/technology-svg/UserSolo.svg" alt="">
+                            <p>Seule</p>
+                        </div>
+                        <div class="date">
+                            <img src="./images/projets/clock.svg" alt="">
+                            <p>Octobre - Novembre 2022</p>
+                        </div>
+                        <div class="study">
+                            <img class="study-img" src="./images/projets/diplome.svg" alt="">
+                            <p>(Projet scolaire) BUT MMI 1 - Semestre 1
+                            </p>
+                        </div>
+                    </div>
+                    <hr class="separator2">
+                </div>
+                <div class="categorie competence">
+                    <div class="container-flex">
+                        <div class="competence-img">
+                            <img src="./images/technology-svg/perso-competence.svg" alt="">
+                        </div>
+                        <div class="categorie-text">
+                            <h3>
+                                Compétences développées
+                            </h3>
+                            <ul>
+                                <li>Réalisation d'une maquette Figma.</li>
+                                <li>Réalisation de la maquette Figma sur Indesign.</li>
+                                <li>Réalisation d'illustration sur Illustrator.</li>
+                                <li>Compression des images sur Photoshop.</li>
+                                <li>Interviewé les habitants de mon quartier.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="categorie bilan">
+                    <div class="container-flex">
+                        <div class="bilan-img">
+                            <img src="./images/technology-svg/perso-bilan.svg" alt="">
+                        </div>
+                        <div class="categorie-text">
+                            <h3>
+                                Mon bilan
+                            </h3>
+                            <p>C'est un projet qui m'a fait sortir de ma zone de confort. Il m'a fait découvrir un autre point de vue de mon quartier. Je n'avais jamais pris conscience de l'ensemble des bâtiments historiques, de l'histoire et des activités qu'il y a. Cela m'a permis aujourd'hui de m'intéresser un peu plus à l'endroit où j'habite ou bien faire attention au lieu où je suis. En effet, chaque endroit est un trésor à découvrir. Enfin, j'ai pu approfondir mes compétences sur InDesign et Illustrator, notamment en faisant des recherches de mon côté.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <button class="retour-projet visible" onclick="toggleProjet('projet-journalQuartier')">
+                    <a class="lien-haut" href="#journalQuartier">FERMER</a>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/script.js"></script>
 </body>
 
 </html>

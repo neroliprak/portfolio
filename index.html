@@ -28,17 +28,15 @@
 
 <body>
     <header>
-        <nav>
+        <nav class="sticky">
             <!-- LeftLogo -->
             <a href="#"><img class="website-logo" src="./images/header/white-logo.svg" alt="Accueil"></a>
             <!-- RightLink -->
             <!-- <p class="menu-title">Néroli Prak</p> #1 -->
-            <img class="menu" src="./images/header/menu.svg" alt="">
             <ul>
                 <li><a class="nav-link about-link" href="#about">À propos</a></li>
                 <li><a class="nav-link projects-link" href="#projet">Projets</a></li>
-                <li><a class="nav-link hobbies-link" href="#">Passe-temps</a></li>
-                <li><a class="nav-link contact-link" href="#">Contact</a></li>
+                <li><a class="nav-link contact-link" href="#footer">Contact</a></li>
             </ul>
         </nav>
         <div class="header-main">
@@ -57,12 +55,14 @@
         <div class="social-media">
             <img class="logo-circular logo-circular1" src="./images/header/Logo-ciruclaire.svg" alt="">
             <img class="logo-circular logo-circular2" src="./images/header/Logo-texte-circulaire.svg" alt="">
-            <a href="https://github.com/neroliprak"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <a href="https://github.com/neroliprak"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24">
                     <path class="icon-social-media"
                         d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                 </svg></a>
-            <a href="https://www.linkedin.com/in/neroli-prak/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path  class="icon-social-media"
+            <a href="https://www.linkedin.com/in/neroli-prak/"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                    height="24" viewBox="0 0 24 24">
+                    <path class="icon-social-media"
                         d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
                 </svg></a>
         </div>
@@ -97,7 +97,7 @@
                 </div>
                 <div class="bulle bulle3">
                     <p class="bulle-texte3">
-                        console.log(‘Si vous recherchez une développeuse full-stack. Je suis votre stagière qu’il vous
+                        console.log(‘Si vous recherchez une développeuse full-stack. Je suis votre stagiaire qu’il vous
                         faut 😜’);
                     </p>
                 </div>
@@ -120,13 +120,13 @@
                     Passionnée par le développement, la création numérique et le design,
                     mes études m’apportent une grande
                     <span class="c-cyan">polyvalence</span>. Je suis ouverte dans tous
-                    les domaines et curieuse d’apprendre. Le BUT MMI m’a apprise et
-                    consolidé mes compétences dans l’univers du multimédia et du
+                    les domaines et curieuse d’apprendre. Le BUT MMI m’a appris et
+                    consolidée mes compétences dans l’univers du multimédia et du
                     numérique.<br /><br />
                     De nature calme, lorsque l’inspiration me frappe en pleine face, les
                     idées fusent comme une
                     <span class="c-cyan">mélodie harmonieuse où design et développement web
-                        s’enlassent</span>.<br /><br />
+                        s’enlacent</span>.<br /><br />
                     C’est beau de parler mais passons à ce que je sais vraiment faire !
                 </p>
             </div>
@@ -196,35 +196,58 @@
             </div>
         </div>
         <h3>Pour plus de projets</h3>
-        <div class="arrow-projet"><img  src="./images/index-main/arrow-up.svg" alt=""></div>
+        <div class="arrow-projet"><img src="./images/index-main/arrow-up.svg" alt=""></div>
         <div class="button-projets">
             <a class="plus-projet-link" href="./dev.html">
                 <div class="plus-projet plus-projet1">
                     Développement web
                     <br>
-                    <svg class="code" xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#20252c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-code"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
-        
+                    <svg class="code" xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24"
+                        fill="none" stroke="#20252c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-code">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+
                 </div>
             </a>
             <a class="plus-projet-link" href="./design.html">
                 <div class="plus-projet plus-projet3">
                     Design
                     <br>
-                    <svg class="pen" xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#20252c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pen-tool"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
+                    <svg class="pen" xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24"
+                        fill="none" stroke="#20252c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-pen-tool">
+                        <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                        <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                        <path d="M2 2l7.586 7.586"></path>
+                        <circle cx="11" cy="11" r="2"></circle>
+                    </svg>
                 </div>
             </a>
             <a class="plus-projet-link" href="./creation-artistique.html">
                 <div class="plus-projet plus-projet4">
                     Création Artistique
                     <br>
-                    <svg class="creation" xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#20252c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-feather"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path><line x1="16" y1="8" x2="2" y2="22"></line><line x1="17.5" y1="15" x2="9" y2="15"></line></svg>
+                    <svg class="creation" xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24"
+                        fill="none" stroke="#20252c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-feather">
+                        <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path>
+                        <line x1="16" y1="8" x2="2" y2="22"></line>
+                        <line x1="17.5" y1="15" x2="9" y2="15"></line>
+                    </svg>
                 </div>
             </a>
             <a class="plus-projet-link" href="./audiovisuel.html">
                 <div class="plus-projet plus-projet2">
                     Audiovisuel
                     <br>
-                    <svg class="video" xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#20252c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-video"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
+                    <svg class="video" xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24"
+                        fill="none" stroke="#20252c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-video">
+                        <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                        <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                    </svg>
                 </div>
             </a>
         </div>
@@ -304,8 +327,7 @@
                     <div class="elt-right">
                         <p class="soft-skill-title title-soft-skill-4 right">Ouverte</p>
                         <p class="description-soft-skill ouverte right">Prête à entendre toutes vos propositions de
-                            projets
-                            et sans aucun jugement et de bonne volonté.
+                            projets et je serais heureuse de travailler avec vous !
                         </p>
                     </div>
                 </div>
@@ -313,7 +335,7 @@
                 <div class="soft-skill-container soft-skill-5">
                     <div class="elt-left-5">
                         <p class="soft-skill-title title-soft-skill-5 left">Travailleuse</p>
-                        <p class="description-soft-skill travailleuse left">WORK • REPOS  • WORK  • DODO  • NAP  • WORK...
+                        <p class="description-soft-skill travailleuse left">Work - Work - Work - Sleep ...
                         </p>
                     </div>
                     <div class="soft-skill-img-div">
@@ -326,6 +348,20 @@
         <footer id="footer">
             <p>Néroli Prak</p>
             <p>neroliprak@gmail.com</p>
+            <div class="rs-wrap">
+                <a href="https://github.com/neroliprak">
+                    <div class="github-rs">
+                        <img src="./images/header/icon-github.svg" alt="">
+                        Github
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/neroli-prak/">
+                    <div class="linkedin-rs">
+                        <img src="./images/header/icon-linkedin.svg" alt="">
+                        Linkedin
+                    </div>
+                </a>
+            </div>
         </footer>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>

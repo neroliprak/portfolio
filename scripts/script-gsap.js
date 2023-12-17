@@ -3,7 +3,6 @@ const textes = [
   "Développeuse web|",
   "UI / UX designer|",
   "Sympatoche|",
-  "Néro|",
 ];
 
 let timelineText = gsap.timeline({ repeat: -1 });
@@ -11,7 +10,7 @@ let timelineText = gsap.timeline({ repeat: -1 });
 textes.forEach((text) => {
   let timeText = gsap.timeline({ repeat: 1, yoyo: true });
   timeText.to(".subtitle2", {
-    duration: 1,
+    duration: 2,
     text: text,
   });
   timelineText.add(timeText);
@@ -72,7 +71,7 @@ tlAproposTablette = gsap.timeline({
     start: "-300px center",
     end: "300px center",
     scrub: true,
-    markers: true,
+    markers: false,
   },
 });
 
@@ -87,7 +86,7 @@ tlAproposPhone = gsap.timeline({
     start: "-300px center",
     end: "300px center",
     scrub: true,
-    markers: true,
+    markers: false,
   },
 });
 tlAproposPhone.from(".apropos-titre-phone", {
@@ -195,7 +194,7 @@ let tlfantom = gsap.timeline({
     start: "-150px center",
     end: "400px center",
     scrub: true,
-    markers: true,
+    markers: false,
   },
 });
 
@@ -212,7 +211,7 @@ let tlfantom2 = gsap.timeline({
     start: "-250px center",
     end: "200px center",
     scrub: true,
-    markers: true,
+    markers: false,
   },
 });
 
@@ -228,7 +227,7 @@ let tl = gsap.timeline({
     end: "1000px ",
     scrub: true,
     autoRotate:"true",
-    markers: true,
+    markers: false,
   },
 });
 const wavePath =
@@ -265,18 +264,3 @@ tlPlaneTablette.to(".animated-element-tablette", {
 
 
 
-let tlSoftskill = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".soft-skill-img-2",
-    start: "-400px center",
-    end: "200px center",
-    scrub: true,
-    
-    markers: true,
-  },
-});
-
-tlSoftskill.to(".soft-skill-img-2", {
-  x: 500,
-  opacity: 1,
-});
